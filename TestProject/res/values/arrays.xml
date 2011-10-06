@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="LINE_CHOICES">
-    	<item>Change Text</item>
-    	<item>Open Contacts</item>
-    	<item>Call April</item>
-    	<item>Voice Command</item>
-    </string-array>
-</resources>
