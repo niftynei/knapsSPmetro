@@ -1,0 +1,5 @@
+insert into stations (name, mapURL)
+values
+('', null),
+						
+									</select>

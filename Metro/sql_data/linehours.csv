@@ -1,0 +1,1271 @@
+lineName,stationName,dayID,startTime,stopTime,frequency
+blue,Jabaquara,1,4:40,0:06,0:03
+blue,Jabaquara,0,4:40,1:00,0:03
+blue,Jabaquara,2,4:40,0:06,0:03
+blue,Conceição,1,4:40,0:08,0:03
+blue,Conceição,0,4:40,1:00,0:03
+blue,Conceição,2,4:40,0:08,0:03
+blue,São Judas,1,4:40,0:10,0:03
+blue,São Judas,0,4:40,1:00,0:03
+blue,São Judas,2,4:40,0:10,0:03
+blue,Saúde,1,4:40,0:12,0:03
+blue,Saúde,0,4:40,1:00,0:03
+blue,Saúde,2,4:40,0:12,0:03
+blue,Praça da Árvore,1,4:40,0:14,0:03
+blue,Praça da Árvore,0,4:40,1:00,0:03
+blue,Praça da Árvore,2,4:40,0:14,0:03
+blue,Santa Cruz,1,4:40,0:16,0:03
+blue,Santa Cruz,0,4:40,1:00,0:03
+blue,Santa Cruz,2,4:40,0:16,0:03
+blue,Vila Mariana,1,4:40,0:18,0:03
+blue,Vila Mariana,0,4:40,1:00,0:03
+blue,Vila Mariana,2,4:40,0:18,0:03
+blue,Ana Rosa,1,4:40,0:20,0:03
+blue,Ana Rosa,0,4:40,1:00,0:03
+blue,Ana Rosa,2,4:40,0:20,0:03
+blue,Paraíso,1,4:40,0:22,0:03
+blue,Paraíso,0,4:40,1:00,0:03
+blue,Paraíso,2,4:40,0:22,0:03
+blue,Vergueiro,1,4:40,0:24,0:03
+blue,Vergueiro,0,4:40,1:00,0:03
+blue,Vergueiro,2,4:40,0:24,0:03
+blue,São Joaquim,1,4:40,0:26,0:03
+blue,São Joaquim,0,4:40,1:00,0:03
+blue,São Joaquim,2,4:40,0:26,0:03
+blue,Liberdade,1,4:40,0:28,0:03
+blue,Liberdade,0,4:40,1:00,0:03
+blue,Liberdade,2,4:40,0:28,0:03
+blue,Sé,1,4:40,0:29,0:03
+blue,Sé,0,4:40,1:00,0:03
+blue,Sé,2,4:40,0:29,0:03
+blue,São Bento,1,4:40,0:32,0:03
+blue,São Bento,0,4:40,1:00,0:03
+blue,São Bento,2,4:40,0:32,0:03
+blue,Luz,1,4:40,0:30,0:03
+blue,Luz,0,4:40,1:00,0:03
+blue,Luz,2,4:40,0:30,0:03
+blue,Tiradentes,1,4:40,0:28,0:03
+blue,Tiradentes,0,4:40,1:00,0:03
+blue,Tiradentes,2,4:40,0:28,0:03
+blue,Armênia,1,4:40,0:26,0:03
+blue,Armênia,0,4:40,1:00,0:03
+blue,Armênia,2,4:40,0:26,0:03
+blue,Portuguesa-Tietê,1,4:40,0:24,0:03
+blue,Portuguesa-Tietê,0,4:40,1:00,0:03
+blue,Portuguesa-Tietê,2,4:40,0:24,0:03
+blue,Carandiru,1,4:40,0:22,0:03
+blue,Carandiru,0,4:40,1:00,0:03
+blue,Carandiru,2,4:40,0:22,0:03
+blue,Santana,1,4:40,0:20,0:03
+blue,Santana,0,4:40,1:00,0:03
+blue,Santana,2,4:40,0:20,0:03
+blue,Jardim São Paulo,1,4:40,0:18,0:03
+blue,Jardim São Paulo,0,4:40,1:00,0:03
+blue,Jardim São Paulo,2,4:40,0:18,0:03
+blue,Parada Inglesa,1,4:40,0:16,0:03
+blue,Parada Inglesa,0,4:40,1:00,0:03
+blue,Parada Inglesa,2,4:40,0:16,0:03
+blue,Tucuruvi,1,4:40,0:14,0:03
+blue,Tucuruvi,0,4:40,1:00,0:03
+blue,Tucuruvi,2,4:40,0:14,0:03
+green,Tamanduateí,1,4:40,21:00,0:03
+green,Tamanduateí,0,4:40,21:00,0:03
+green,Tamanduateí,2,4:40,21:00,0:03
+green,Vila Prudente,1,4:40,21:00,0:03
+green,Vila Prudente,0,4:40,21:00,0:03
+green,Vila Prudente,2,4:40,21:00,0:03
+green,Sacomã,1,4:40,0:11,0:03
+green,Sacomã,0,4:40,1:00,0:03
+green,Sacomã,2,4:40,0:11,0:03
+green,Alto do Ipiranga,1,4:40,0:13,0:03
+green,Alto do Ipiranga,0,4:40,1:00,0:03
+green,Alto do Ipiranga,2,4:40,0:13,0:03
+green,Imigrantes,1,4:40,0:16,0:03
+green,Imigrantes,0,4:40,1:00,0:03
+green,Imigrantes,2,4:40,0:16,0:03
+green,Chácara Klabin,1,4:40,0:18,0:03
+green,Chácara Klabin,0,4:40,1:00,0:03
+green,Chácara Klabin,2,4:40,0:18,0:03
+green,Ana Rosa,1,4:40,0:20,0:03
+green,Ana Rosa,0,4:40,1:00,0:03
+green,Ana Rosa,2,4:40,0:20,0:03
+green,Paraíso,1,4:40,0:22,0:03
+green,Paraíso,0,4:40,1:00,0:03
+green,Paraíso,2,4:40,0:22,0:03
+green,Brigadeiro,1,4:40,0:24,0:03
+green,Brigadeiro,0,4:40,1:00,0:03
+green,Brigadeiro,2,4:40,0:24,0:03
+green,Trianon-Masp,1,4:40,0:22,0:03
+green,Trianon-Masp,0,4:40,1:00,0:03
+green,Trianon-Masp,2,4:40,0:22,0:03
+green,Consolação,1,4:40,0:20,0:03
+green,Consolação,0,4:40,1:00,0:03
+green,Consolação,2,4:40,0:20,0:03
+green,Clínicas,1,4:40,0:18,0:03
+green,Clínicas,0,4:40,1:00,0:03
+green,Clínicas,2,4:40,0:18,0:03
+green,Sumaré,1,4:40,0:16,0:03
+green,Sumaré,0,4:40,1:00,0:03
+green,Sumaré,2,4:40,0:16,0:03
+green,Vila Madalena,1,4:40,0:14,0:03
+green,Vila Madalena,0,4:40,1:00,0:03
+green,Vila Madalena,2,4:40,0:14,0:03
+red,Corinthians - Itaquera,1,4:40,0:19,0:03
+red,Corinthians - Itaquera,0,4:40,1:00,0:03
+red,Corinthians - Itaquera,2,4:40,0:19,0:03
+red,Artur Alvim,1,4:40,0:21,0:03
+red,Artur Alvim,0,4:40,1:00,0:03
+red,Artur Alvim,2,4:40,0:21,0:03
+red,Patriarca,1,4:40,0:23,0:03
+red,Patriarca,0,4:40,1:00,0:03
+red,Patriarca,2,4:40,0:23,0:03
+red,Guilhermina-Esperança,1,4:40,0:25,0:03
+red,Guilhermina-Esperança,0,4:40,1:00,0:03
+red,Guilhermina-Esperança,2,4:40,0:25,0:03
+red,Vila Matilde,1,4:40,0:27,0:03
+red,Vila Matilde,0,4:40,1:00,0:03
+red,Vila Matilde,2,4:40,0:27,0:03
+red,Penha,1,4:40,0:29,0:03
+red,Penha,0,4:40,1:00,0:03
+red,Penha,2,4:40,0:29,0:03
+red,Carrão,1,4:40,0:31,0:03
+red,Carrão,0,4:40,1:00,0:03
+red,Carrão,2,4:40,0:31,0:03
+red,Tatuapé,1,4:40,0:33,0:03
+red,Tatuapé,0,4:40,1:00,0:03
+red,Tatuapé,2,4:40,0:33,0:03
+red,Belém,1,4:40,0:35,0:03
+red,Belém,0,4:40,1:00,0:03
+red,Belém,2,4:40,0:35,0:03
+red,Bresser-Moóca,1,4:40,0:35,0:03
+red,Bresser-Moóca,0,4:40,1:00,0:03
+red,Bresser-Moóca,2,4:40,0:35,0:03
+red,Brás,1,4:40,0:33,0:03
+red,Brás,0,4:40,1:00,0:03
+red,Brás,2,4:40,0:33,0:03
+red,Pedro II,1,4:40,0:31,0:03
+red,Pedro II,0,4:40,1:00,0:03
+red,Pedro II,2,4:40,0:31,0:03
+red,Sé,1,4:40,0:29,0:03
+red,Sé,0,4:40,1:00,0:03
+red,Sé,2,4:40,0:29,0:03
+red,Anhangabaú,1,4:40,0:27,0:03
+red,Anhangabaú,0,4:40,1:00,0:03
+red,Anhangabaú,2,4:40,0:27,0:03
+red,República,1,4:40,0:25,0:03
+red,República,0,4:40,1:00,0:03
+red,República,2,4:40,0:25,0:03
+red,Santa Cecília,1,4:40,0:23,0:03
+red,Santa Cecília,0,4:40,1:00,0:03
+red,Santa Cecília,2,4:40,0:23,0:03
+red,Marechal Deodoro,1,4:40,0:21,0:03
+red,Marechal Deodoro,0,4:40,1:00,0:03
+red,Marechal Deodoro,2,4:40,0:21,0:03
+red,Palmeiras-Barra Funda,1,4:40,0:19,0:03
+red,Palmeiras-Barra Funda,0,4:40,1:00,0:03
+red,Palmeiras-Barra Funda,2,4:40,0:19,0:03
+lilac,Capão Redondo,1,4:40,00:00,0:03
+lilac,Capão Redondo,0,4:40,00:00,0:03
+lilac,Capão Redondo,2,4:40,00:00,0:03
+lilac,Campo Limpo,1,4:40,00:00,0:03
+lilac,Campo Limpo,0,4:40,00:00,0:03
+lilac,Campo Limpo,2,4:40,00:00,0:03
+lilac,Vila das Belezas,1,4:40,00:00,0:03
+lilac,Vila das Belezas,0,4:40,00:00,0:03
+lilac,Vila das Belezas,2,4:40,00:00,0:03
+lilac,Giovanni Gronchi,1,4:40,00:00,0:03
+lilac,Giovanni Gronchi,0,4:40,00:00,0:03
+lilac,Giovanni Gronchi,2,4:40,00:00,0:03
+lilac,Santo Amaro,1,4:40,00:00,0:03
+lilac,Santo Amaro,0,4:40,00:00,0:03
+lilac,Santo Amaro,2,4:40,00:00,0:03
+lilac,Largo Treze,1,4:40,00:00,0:03
+lilac,Largo Treze,0,4:40,00:00,0:03
+lilac,Largo Treze,2,4:40,00:00,0:03
+ruby1,Luz,2,4:40,5:00,0:12
+ruby1,Luz,2,5:01,15:15,0:08
+ruby1,Luz,2,15:16,20:05,0:07
+ruby1,Luz,2,20:06,0:00,0:12
+ruby1,Luz,0,4:40,4:50,0:15
+ruby1,Luz,0,4:51,20:10,0:08
+ruby1,Luz,0,20:11,0:00,0:12
+ruby1,Luz,1,4:00,4:50,0:15
+ruby1,Luz,1,4:51,20:00,0:08
+ruby1,Luz,1,20:01,0:00,0:12
+ruby1,Palmeiras-Barra Funda,2,4:40,5:00,0:12
+ruby1,Palmeiras-Barra Funda,2,5:01,15:15,0:08
+ruby1,Palmeiras-Barra Funda,2,15:16,20:05,0:07
+ruby1,Palmeiras-Barra Funda,2,20:06,0:00,0:12
+ruby1,Palmeiras-Barra Funda,0,4:40,4:50,0:15
+ruby1,Palmeiras-Barra Funda,0,4:51,20:10,0:08
+ruby1,Palmeiras-Barra Funda,0,20:11,0:00,0:12
+ruby1,Palmeiras-Barra Funda,1,4:00,4:50,0:15
+ruby1,Palmeiras-Barra Funda,1,4:51,20:00,0:08
+ruby1,Palmeiras-Barra Funda,1,20:01,0:00,0:12
+ruby1,Água Branca,2,4:40,5:00,0:12
+ruby1,Água Branca,2,5:01,15:15,0:08
+ruby1,Água Branca,2,15:16,20:05,0:07
+ruby1,Água Branca,2,20:06,0:00,0:12
+ruby1,Água Branca,0,4:40,4:50,0:15
+ruby1,Água Branca,0,4:51,20:10,0:08
+ruby1,Água Branca,0,20:11,0:00,0:12
+ruby1,Água Branca,1,4:00,4:50,0:15
+ruby1,Água Branca,1,4:51,20:00,0:08
+ruby1,Água Branca,1,20:01,0:00,0:12
+ruby1,Lapa,2,4:40,5:00,0:12
+ruby1,Lapa,2,5:01,15:15,0:08
+ruby1,Lapa,2,15:16,20:05,0:07
+ruby1,Lapa,2,20:06,0:00,0:12
+ruby1,Lapa,0,4:40,4:50,0:15
+ruby1,Lapa,0,4:51,20:10,0:08
+ruby1,Lapa,0,20:11,0:00,0:12
+ruby1,Lapa,1,4:00,4:50,0:15
+ruby1,Lapa,1,4:51,20:00,0:08
+ruby1,Lapa,1,20:01,0:00,0:12
+ruby1,Piqueri,2,4:40,5:00,0:12
+ruby1,Piqueri,2,5:01,15:15,0:08
+ruby1,Piqueri,2,15:16,20:05,0:07
+ruby1,Piqueri,2,20:06,0:00,0:12
+ruby1,Piqueri,0,4:40,4:50,0:15
+ruby1,Piqueri,0,4:51,20:10,0:08
+ruby1,Piqueri,0,20:11,0:00,0:12
+ruby1,Piqueri,1,4:00,4:50,0:15
+ruby1,Piqueri,1,4:51,20:00,0:08
+ruby1,Piqueri,1,20:01,0:00,0:12
+ruby1,Pirituba,2,4:40,5:00,0:12
+ruby1,Pirituba,2,5:01,15:15,0:08
+ruby1,Pirituba,2,15:16,20:05,0:07
+ruby1,Pirituba,2,20:06,0:00,0:12
+ruby1,Pirituba,0,4:40,4:50,0:15
+ruby1,Pirituba,0,4:51,20:10,0:08
+ruby1,Pirituba,0,20:11,0:00,0:12
+ruby1,Pirituba,1,4:00,4:50,0:15
+ruby1,Pirituba,1,4:51,20:00,0:08
+ruby1,Pirituba,1,20:01,0:00,0:12
+ruby1,Vila Clarice,2,4:40,5:00,0:12
+ruby1,Vila Clarice,2,5:01,15:15,0:08
+ruby1,Vila Clarice,2,15:16,20:05,0:07
+ruby1,Vila Clarice,2,20:06,0:00,0:12
+ruby1,Vila Clarice,0,4:40,4:50,0:15
+ruby1,Vila Clarice,0,4:51,20:10,0:08
+ruby1,Vila Clarice,0,20:11,0:00,0:12
+ruby1,Vila Clarice,1,4:00,4:50,0:15
+ruby1,Vila Clarice,1,4:51,20:00,0:08
+ruby1,Vila Clarice,1,20:01,0:00,0:12
+ruby1,Jaraguá,2,4:40,5:00,0:12
+ruby1,Jaraguá,2,5:01,15:15,0:08
+ruby1,Jaraguá,2,15:16,20:05,0:07
+ruby1,Jaraguá,2,20:06,0:00,0:12
+ruby1,Jaraguá,0,4:40,4:50,0:15
+ruby1,Jaraguá,0,4:51,20:10,0:08
+ruby1,Jaraguá,0,20:11,0:00,0:12
+ruby1,Jaraguá,1,4:00,4:50,0:15
+ruby1,Jaraguá,1,4:51,20:00,0:08
+ruby1,Jaraguá,1,20:01,0:00,0:12
+ruby1,Perus,2,4:40,5:00,0:12
+ruby1,Perus,2,5:01,15:15,0:08
+ruby1,Perus,2,15:16,20:05,0:07
+ruby1,Perus,2,20:06,0:00,0:12
+ruby1,Perus,0,4:40,4:50,0:15
+ruby1,Perus,0,4:51,20:10,0:08
+ruby1,Perus,0,20:11,0:00,0:12
+ruby1,Perus,1,4:00,4:50,0:15
+ruby1,Perus,1,4:51,20:00,0:08
+ruby1,Perus,1,20:01,0:00,0:12
+ruby1,Caieiras,2,4:40,5:00,0:12
+ruby1,Caieiras,2,5:01,15:15,0:08
+ruby1,Caieiras,2,15:16,20:05,0:07
+ruby1,Caieiras,2,20:06,0:00,0:12
+ruby1,Caieiras,0,4:40,4:50,0:15
+ruby1,Caieiras,0,4:51,20:10,0:08
+ruby1,Caieiras,0,20:11,0:00,0:12
+ruby1,Caieiras,1,4:00,4:50,0:15
+ruby1,Caieiras,1,4:51,20:00,0:08
+ruby1,Caieiras,1,20:01,0:00,0:12
+ruby1,Franco da Rocha,2,4:40,5:00,0:12
+ruby1,Franco da Rocha,2,5:01,15:15,0:08
+ruby1,Franco da Rocha,2,15:16,20:05,0:07
+ruby1,Franco da Rocha,2,20:06,0:00,0:12
+ruby1,Franco da Rocha,0,4:40,4:50,0:15
+ruby1,Franco da Rocha,0,4:51,20:10,0:08
+ruby1,Franco da Rocha,0,20:11,0:00,0:12
+ruby1,Franco da Rocha,1,4:00,4:50,0:15
+ruby1,Franco da Rocha,1,4:51,20:00,0:08
+ruby1,Franco da Rocha,1,20:01,0:00,0:12
+ruby1,Baltazar Fidélis,2,4:40,5:00,0:12
+ruby1,Baltazar Fidélis,2,5:01,15:15,0:08
+ruby1,Baltazar Fidélis,2,15:16,20:05,0:07
+ruby1,Baltazar Fidélis,2,20:06,0:00,0:12
+ruby1,Baltazar Fidélis,0,4:40,4:50,0:15
+ruby1,Baltazar Fidélis,0,4:51,20:10,0:08
+ruby1,Baltazar Fidélis,0,20:11,0:00,0:12
+ruby1,Baltazar Fidélis,1,4:00,4:50,0:15
+ruby1,Baltazar Fidélis,1,4:51,20:00,0:08
+ruby1,Baltazar Fidélis,1,20:01,0:00,0:12
+ruby1,Francisco Morato,2,4:40,5:00,0:12
+ruby1,Francisco Morato,2,5:01,15:15,0:08
+ruby1,Francisco Morato,2,15:16,20:05,0:07
+ruby1,Francisco Morato,2,20:06,0:00,0:12
+ruby1,Francisco Morato,0,4:40,4:50,0:15
+ruby1,Francisco Morato,0,4:51,20:10,0:08
+ruby1,Francisco Morato,0,20:11,0:00,0:12
+ruby1,Francisco Morato,1,4:00,4:50,0:15
+ruby1,Francisco Morato,1,4:51,20:00,0:08
+ruby1,Francisco Morato,1,20:01,0:00,0:12
+ruby2,Francisco Morato,2,4:00,8:30,0:11
+ruby2,Francisco Morato,2,8:31,15:50,0:14
+ruby2,Francisco Morato,2,15:51,20:00,0:11
+ruby2,Francisco Morato,2,20:01,00:00,0:14
+ruby2,Francisco Morato,0,4:00,8:30,0:11
+ruby2,Francisco Morato,0,8:31,20:45,0:14
+ruby2,Francisco Morato,0,20:46,00:00,0:20
+ruby2,Francisco Morato,1,4:00,20:05,0:14
+ruby2,Francisco Morato,1,20:06,00:00,0:20
+ruby2,Botujuru,2,4:00,8:30,0:11
+ruby2,Botujuru,2,8:31,15:50,0:14
+ruby2,Botujuru,2,15:51,20:00,0:11
+ruby2,Botujuru,2,20:01,00:00,0:14
+ruby2,Botujuru,0,4:00,8:30,0:11
+ruby2,Botujuru,0,8:31,20:45,0:14
+ruby2,Botujuru,0,20:46,00:00,0:20
+ruby2,Botujuru,1,4:00,20:05,0:14
+ruby2,Botujuru,1,20:06,00:00,0:20
+ruby2,Campo Limpo Paulista,2,4:00,8:30,0:11
+ruby2,Campo Limpo Paulista,2,8:31,15:50,0:14
+ruby2,Campo Limpo Paulista,2,15:51,20:00,0:11
+ruby2,Campo Limpo Paulista,2,20:01,00:00,0:14
+ruby2,Campo Limpo Paulista,0,4:00,8:30,0:11
+ruby2,Campo Limpo Paulista,0,8:31,20:45,0:14
+ruby2,Campo Limpo Paulista,0,20:46,00:00,0:20
+ruby2,Campo Limpo Paulista,1,4:00,20:05,0:14
+ruby2,Campo Limpo Paulista,1,20:06,00:00,0:20
+ruby2,Várzea Paulista,2,4:00,8:30,0:11
+ruby2,Várzea Paulista,2,8:31,15:50,0:14
+ruby2,Várzea Paulista,2,15:51,20:00,0:11
+ruby2,Várzea Paulista,2,20:01,00:00,0:14
+ruby2,Várzea Paulista,0,4:00,8:30,0:11
+ruby2,Várzea Paulista,0,8:31,20:45,0:14
+ruby2,Várzea Paulista,0,20:46,00:00,0:20
+ruby2,Várzea Paulista,1,4:00,20:05,0:14
+ruby2,Várzea Paulista,1,20:06,00:00,0:20
+diamond,Júlio Prestes,2,4:00,5:38,0:12
+diamond,Júlio Prestes,2,5:39,9:12,0:06
+diamond,Júlio Prestes,2,9:13,17:25,0:08
+diamond,Júlio Prestes,2,17:26,20:30,0:07
+diamond,Júlio Prestes,2,20:31,23:20,0:10
+diamond,Júlio Prestes,2,23:21,00:00,0:12
+diamond,Júlio Prestes,0,4:00,5:25,0:15
+diamond,Júlio Prestes,0,5:26,20:05,0:08
+diamond,Júlio Prestes,0,20:06,00:00,0:10
+diamond,Júlio Prestes,1,4:00,5:15,0:12
+diamond,Júlio Prestes,1,5:16,20:20,0:10
+diamond,Júlio Prestes,1,20:21,00:00,0:15
+diamond,Palmeiras-Barra Funda,2,4:00,5:38,0:12
+diamond,Palmeiras-Barra Funda,2,5:39,9:12,0:06
+diamond,Palmeiras-Barra Funda,2,9:13,17:25,0:08
+diamond,Palmeiras-Barra Funda,2,17:26,20:30,0:07
+diamond,Palmeiras-Barra Funda,2,20:31,23:20,0:10
+diamond,Palmeiras-Barra Funda,2,23:21,00:00,0:12
+diamond,Palmeiras-Barra Funda,0,4:00,5:25,0:15
+diamond,Palmeiras-Barra Funda,0,5:26,20:05,0:08
+diamond,Palmeiras-Barra Funda,0,20:06,00:00,0:10
+diamond,Palmeiras-Barra Funda,1,4:00,5:15,0:12
+diamond,Palmeiras-Barra Funda,1,5:16,20:20,0:10
+diamond,Palmeiras-Barra Funda,1,20:21,00:00,0:15
+diamond,Lapa,2,4:00,5:38,0:12
+diamond,Lapa,2,5:39,9:12,0:06
+diamond,Lapa,2,9:13,17:25,0:08
+diamond,Lapa,2,17:26,20:30,0:07
+diamond,Lapa,2,20:31,23:20,0:10
+diamond,Lapa,2,23:21,00:00,0:12
+diamond,Lapa,0,4:00,5:25,0:15
+diamond,Lapa,0,5:26,20:05,0:08
+diamond,Lapa,0,20:06,00:00,0:10
+diamond,Lapa,1,4:00,5:15,0:12
+diamond,Lapa,1,5:16,20:20,0:10
+diamond,Lapa,1,20:21,00:00,0:15
+diamond,Domingos de Moraes,2,4:00,5:38,0:12
+diamond,Domingos de Moraes,2,5:39,9:12,0:06
+diamond,Domingos de Moraes,2,9:13,17:25,0:08
+diamond,Domingos de Moraes,2,17:26,20:30,0:07
+diamond,Domingos de Moraes,2,20:31,23:20,0:10
+diamond,Domingos de Moraes,2,23:21,00:00,0:12
+diamond,Domingos de Moraes,0,4:00,5:25,0:15
+diamond,Domingos de Moraes,0,5:26,20:05,0:08
+diamond,Domingos de Moraes,0,20:06,00:00,0:10
+diamond,Domingos de Moraes,1,4:00,5:15,0:12
+diamond,Domingos de Moraes,1,5:16,20:20,0:10
+diamond,Domingos de Moraes,1,20:21,00:00,0:15
+diamond,Imperatriz Leopoldina,2,4:00,5:38,0:12
+diamond,Imperatriz Leopoldina,2,5:39,9:12,0:06
+diamond,Imperatriz Leopoldina,2,9:13,17:25,0:08
+diamond,Imperatriz Leopoldina,2,17:26,20:30,0:07
+diamond,Imperatriz Leopoldina,2,20:31,23:20,0:10
+diamond,Imperatriz Leopoldina,2,23:21,00:00,0:12
+diamond,Imperatriz Leopoldina,0,4:00,5:25,0:15
+diamond,Imperatriz Leopoldina,0,5:26,20:05,0:08
+diamond,Imperatriz Leopoldina,0,20:06,00:00,0:10
+diamond,Imperatriz Leopoldina,1,4:00,5:15,0:12
+diamond,Imperatriz Leopoldina,1,5:16,20:20,0:10
+diamond,Imperatriz Leopoldina,1,20:21,00:00,0:15
+diamond,Presidente Altino,2,4:00,5:38,0:12
+diamond,Presidente Altino,2,5:39,9:12,0:06
+diamond,Presidente Altino,2,9:13,17:25,0:08
+diamond,Presidente Altino,2,17:26,20:30,0:07
+diamond,Presidente Altino,2,20:31,23:20,0:10
+diamond,Presidente Altino,2,23:21,00:00,0:12
+diamond,Presidente Altino,0,4:00,5:25,0:15
+diamond,Presidente Altino,0,5:26,20:05,0:08
+diamond,Presidente Altino,0,20:06,00:00,0:10
+diamond,Presidente Altino,1,4:00,5:15,0:12
+diamond,Presidente Altino,1,5:16,20:20,0:10
+diamond,Presidente Altino,1,20:21,00:00,0:15
+diamond,Osasco,2,4:00,5:38,0:12
+diamond,Osasco,2,5:39,9:12,0:06
+diamond,Osasco,2,9:13,17:25,0:08
+diamond,Osasco,2,17:26,20:30,0:07
+diamond,Osasco,2,20:31,23:20,0:10
+diamond,Osasco,2,23:21,00:00,0:12
+diamond,Osasco,0,4:00,5:25,0:15
+diamond,Osasco,0,5:26,20:05,0:08
+diamond,Osasco,0,20:06,00:00,0:10
+diamond,Osasco,1,4:00,5:15,0:12
+diamond,Osasco,1,5:16,20:20,0:10
+diamond,Osasco,1,20:21,00:00,0:15
+diamond,Comandante Sampaio,2,4:00,5:38,0:12
+diamond,Comandante Sampaio,2,5:39,9:12,0:06
+diamond,Comandante Sampaio,2,9:13,17:25,0:08
+diamond,Comandante Sampaio,2,17:26,20:30,0:07
+diamond,Comandante Sampaio,2,20:31,23:20,0:10
+diamond,Comandante Sampaio,2,23:21,00:00,0:12
+diamond,Comandante Sampaio,0,4:00,5:25,0:15
+diamond,Comandante Sampaio,0,5:26,20:05,0:08
+diamond,Comandante Sampaio,0,20:06,00:00,0:10
+diamond,Comandante Sampaio,1,4:00,5:15,0:12
+diamond,Comandante Sampaio,1,5:16,20:20,0:10
+diamond,Comandante Sampaio,1,20:21,00:00,0:15
+diamond,Quitaúna,2,4:00,5:38,0:12
+diamond,Quitaúna,2,5:39,9:12,0:06
+diamond,Quitaúna,2,9:13,17:25,0:08
+diamond,Quitaúna,2,17:26,20:30,0:07
+diamond,Quitaúna,2,20:31,23:20,0:10
+diamond,Quitaúna,2,23:21,00:00,0:12
+diamond,Quitaúna,0,4:00,5:25,0:15
+diamond,Quitaúna,0,5:26,20:05,0:08
+diamond,Quitaúna,0,20:06,00:00,0:10
+diamond,Quitaúna,1,4:00,5:15,0:12
+diamond,Quitaúna,1,5:16,20:20,0:10
+diamond,Quitaúna,1,20:21,00:00,0:15
+diamond,General Miguel Costa,2,4:00,5:38,0:12
+diamond,General Miguel Costa,2,5:39,9:12,0:06
+diamond,General Miguel Costa,2,9:13,17:25,0:08
+diamond,General Miguel Costa,2,17:26,20:30,0:07
+diamond,General Miguel Costa,2,20:31,23:20,0:10
+diamond,General Miguel Costa,2,23:21,00:00,0:12
+diamond,General Miguel Costa,0,4:00,5:25,0:15
+diamond,General Miguel Costa,0,5:26,20:05,0:08
+diamond,General Miguel Costa,0,20:06,00:00,0:10
+diamond,General Miguel Costa,1,4:00,5:15,0:12
+diamond,General Miguel Costa,1,5:16,20:20,0:10
+diamond,General Miguel Costa,1,20:21,00:00,0:15
+diamond,Carapicuiba,2,4:00,5:38,0:12
+diamond,Carapicuiba,2,5:39,9:12,0:06
+diamond,Carapicuiba,2,9:13,17:25,0:08
+diamond,Carapicuiba,2,17:26,20:30,0:07
+diamond,Carapicuiba,2,20:31,23:20,0:10
+diamond,Carapicuiba,2,23:21,00:00,0:12
+diamond,Carapicuiba,0,4:00,5:25,0:15
+diamond,Carapicuiba,0,5:26,20:05,0:08
+diamond,Carapicuiba,0,20:06,00:00,0:10
+diamond,Carapicuiba,1,4:00,5:15,0:12
+diamond,Carapicuiba,1,5:16,20:20,0:10
+diamond,Carapicuiba,1,20:21,00:00,0:15
+diamond,Santa Terezinha,2,4:00,5:38,0:12
+diamond,Santa Terezinha,2,5:39,9:12,0:06
+diamond,Santa Terezinha,2,9:13,17:25,0:08
+diamond,Santa Terezinha,2,17:26,20:30,0:07
+diamond,Santa Terezinha,2,20:31,23:20,0:10
+diamond,Santa Terezinha,2,23:21,00:00,0:12
+diamond,Santa Terezinha,0,4:00,5:25,0:15
+diamond,Santa Terezinha,0,5:26,20:05,0:08
+diamond,Santa Terezinha,0,20:06,00:00,0:10
+diamond,Santa Terezinha,1,4:00,5:15,0:12
+diamond,Santa Terezinha,1,5:16,20:20,0:10
+diamond,Santa Terezinha,1,20:21,00:00,0:15
+diamond,Antônio João,2,4:00,5:38,0:12
+diamond,Antônio João,2,5:39,9:12,0:06
+diamond,Antônio João,2,9:13,17:25,0:08
+diamond,Antônio João,2,17:26,20:30,0:07
+diamond,Antônio João,2,20:31,23:20,0:10
+diamond,Antônio João,2,23:21,00:00,0:12
+diamond,Antônio João,0,4:00,5:25,0:15
+diamond,Antônio João,0,5:26,20:05,0:08
+diamond,Antônio João,0,20:06,00:00,0:10
+diamond,Antônio João,1,4:00,5:15,0:12
+diamond,Antônio João,1,5:16,20:20,0:10
+diamond,Antônio João,1,20:21,00:00,0:15
+diamond,Barueri,2,4:00,5:38,0:12
+diamond,Barueri,2,5:39,9:12,0:06
+diamond,Barueri,2,9:13,17:25,0:08
+diamond,Barueri,2,17:26,20:30,0:07
+diamond,Barueri,2,20:31,23:20,0:10
+diamond,Barueri,2,23:21,00:00,0:12
+diamond,Barueri,0,4:00,5:25,0:15
+diamond,Barueri,0,5:26,20:05,0:08
+diamond,Barueri,0,20:06,00:00,0:10
+diamond,Barueri,1,4:00,5:15,0:12
+diamond,Barueri,1,5:16,20:20,0:10
+diamond,Barueri,1,20:21,00:00,0:15
+diamond,Jardim Belval,2,4:00,5:38,0:12
+diamond,Jardim Belval,2,5:39,9:12,0:06
+diamond,Jardim Belval,2,9:13,17:25,0:08
+diamond,Jardim Belval,2,17:26,20:30,0:07
+diamond,Jardim Belval,2,20:31,23:20,0:10
+diamond,Jardim Belval,2,23:21,00:00,0:12
+diamond,Jardim Belval,0,4:00,5:25,0:15
+diamond,Jardim Belval,0,5:26,20:05,0:08
+diamond,Jardim Belval,0,20:06,00:00,0:10
+diamond,Jardim Belval,1,4:00,5:15,0:12
+diamond,Jardim Belval,1,5:16,20:20,0:10
+diamond,Jardim Belval,1,20:21,00:00,0:15
+diamond,Jardim Silveira,2,4:00,5:38,0:12
+diamond,Jardim Silveira,2,5:39,9:12,0:06
+diamond,Jardim Silveira,2,9:13,17:25,0:08
+diamond,Jardim Silveira,2,17:26,20:30,0:07
+diamond,Jardim Silveira,2,20:31,23:20,0:10
+diamond,Jardim Silveira,2,23:21,00:00,0:12
+diamond,Jardim Silveira,0,4:00,5:25,0:15
+diamond,Jardim Silveira,0,5:26,20:05,0:08
+diamond,Jardim Silveira,0,20:06,00:00,0:10
+diamond,Jardim Silveira,1,4:00,5:15,0:12
+diamond,Jardim Silveira,1,5:16,20:20,0:10
+diamond,Jardim Silveira,1,20:21,00:00,0:15
+diamond,Jandira,2,4:00,5:38,0:12
+diamond,Jandira,2,5:39,9:12,0:06
+diamond,Jandira,2,9:13,17:25,0:08
+diamond,Jandira,2,17:26,20:30,0:07
+diamond,Jandira,2,20:31,23:20,0:10
+diamond,Jandira,2,23:21,00:00,0:12
+diamond,Jandira,0,4:00,5:25,0:15
+diamond,Jandira,0,5:26,20:05,0:08
+diamond,Jandira,0,20:06,00:00,0:10
+diamond,Jandira,1,4:00,5:15,0:12
+diamond,Jandira,1,5:16,20:20,0:10
+diamond,Jandira,1,20:21,00:00,0:15
+diamond,Sagrado Coração,2,4:00,5:38,0:12
+diamond,Sagrado Coração,2,5:39,9:12,0:06
+diamond,Sagrado Coração,2,9:13,17:25,0:08
+diamond,Sagrado Coração,2,17:26,20:30,0:07
+diamond,Sagrado Coração,2,20:31,23:20,0:10
+diamond,Sagrado Coração,2,23:21,00:00,0:12
+diamond,Sagrado Coração,0,4:00,5:25,0:15
+diamond,Sagrado Coração,0,5:26,20:05,0:08
+diamond,Sagrado Coração,0,20:06,00:00,0:10
+diamond,Sagrado Coração,1,4:00,5:15,0:12
+diamond,Sagrado Coração,1,5:16,20:20,0:10
+diamond,Sagrado Coração,1,20:21,00:00,0:15
+diamond,Engenheiro Cardoso,2,4:00,5:38,0:12
+diamond,Engenheiro Cardoso,2,5:39,9:12,0:06
+diamond,Engenheiro Cardoso,2,9:13,17:25,0:08
+diamond,Engenheiro Cardoso,2,17:26,20:30,0:07
+diamond,Engenheiro Cardoso,2,20:31,23:20,0:10
+diamond,Engenheiro Cardoso,2,23:21,00:00,0:12
+diamond,Engenheiro Cardoso,0,4:00,5:25,0:15
+diamond,Engenheiro Cardoso,0,5:26,20:05,0:08
+diamond,Engenheiro Cardoso,0,20:06,00:00,0:10
+diamond,Engenheiro Cardoso,1,4:00,5:15,0:12
+diamond,Engenheiro Cardoso,1,5:16,20:20,0:10
+diamond,Engenheiro Cardoso,1,20:21,00:00,0:15
+diamond,Itapevi,2,4:00,5:38,0:12
+diamond,Itapevi,2,5:39,9:12,0:06
+diamond,Itapevi,2,9:13,17:25,0:08
+diamond,Itapevi,2,17:26,20:30,0:07
+diamond,Itapevi,2,20:31,23:20,0:10
+diamond,Itapevi,2,23:21,00:00,0:12
+diamond,Itapevi,0,4:00,5:25,0:15
+diamond,Itapevi,0,5:26,20:05,0:08
+diamond,Itapevi,0,20:06,00:00,0:10
+diamond,Itapevi,1,4:00,5:15,0:12
+diamond,Itapevi,1,5:16,20:20,0:10
+diamond,Itapevi,1,20:21,00:00,0:15
+emerald,Osasco,2,4:00,5:45,0:10
+emerald,Osasco,2,5:46,9:40,0:05
+emerald,Osasco,2,9:41,16:00,0:07
+emerald,Osasco,2,16:01,20:20,0:05
+emerald,Osasco,2,20:21,00:00,0:10
+emerald,Osasco,0,4:00,6:25,0:10
+emerald,Osasco,0,6:26,18:30,0:07
+emerald,Osasco,0,18:31,00:00,0:10
+emerald,Osasco,1,4:00,00:00,0:10
+emerald,Presidente Altino,2,4:00,5:45,0:10
+emerald,Presidente Altino,2,5:46,9:40,0:05
+emerald,Presidente Altino,2,9:41,16:00,0:07
+emerald,Presidente Altino,2,16:01,20:20,0:05
+emerald,Presidente Altino,2,20:21,00:00,0:10
+emerald,Presidente Altino,0,4:00,6:25,0:10
+emerald,Presidente Altino,0,6:26,18:30,0:07
+emerald,Presidente Altino,0,18:31,00:00,0:10
+emerald,Presidente Altino,1,4:00,00:00,0:10
+emerald,Ceasa,2,4:00,5:45,0:10
+emerald,Ceasa,2,5:46,9:40,0:05
+emerald,Ceasa,2,9:41,16:00,0:07
+emerald,Ceasa,2,16:01,20:20,0:05
+emerald,Ceasa,2,20:21,00:00,0:10
+emerald,Ceasa,0,4:00,6:25,0:10
+emerald,Ceasa,0,6:26,18:30,0:07
+emerald,Ceasa,0,18:31,00:00,0:10
+emerald,Ceasa,1,4:00,00:00,0:10
+emerald,Villa-Lobos - Jaguaré,2,4:00,5:45,0:10
+emerald,Villa-Lobos - Jaguaré,2,5:46,9:40,0:05
+emerald,Villa-Lobos - Jaguaré,2,9:41,16:00,0:07
+emerald,Villa-Lobos - Jaguaré,2,16:01,20:20,0:05
+emerald,Villa-Lobos - Jaguaré,2,20:21,00:00,0:10
+emerald,Villa-Lobos - Jaguaré,0,4:00,6:25,0:10
+emerald,Villa-Lobos - Jaguaré,0,6:26,18:30,0:07
+emerald,Villa-Lobos - Jaguaré,0,18:31,00:00,0:10
+emerald,Villa-Lobos - Jaguaré,1,4:00,00:00,0:10
+emerald,Cidade Universitária,2,4:00,5:45,0:10
+emerald,Cidade Universitária,2,5:46,9:40,0:05
+emerald,Cidade Universitária,2,9:41,16:00,0:07
+emerald,Cidade Universitária,2,16:01,20:20,0:05
+emerald,Cidade Universitária,2,20:21,00:00,0:10
+emerald,Cidade Universitária,0,4:00,6:25,0:10
+emerald,Cidade Universitária,0,6:26,18:30,0:07
+emerald,Cidade Universitária,0,18:31,00:00,0:10
+emerald,Cidade Universitária,1,4:00,00:00,0:10
+emerald,Pinheiros,2,4:00,5:45,0:10
+emerald,Pinheiros,2,5:46,9:40,0:05
+emerald,Pinheiros,2,9:41,16:00,0:07
+emerald,Pinheiros,2,16:01,20:20,0:05
+emerald,Pinheiros,2,20:21,00:00,0:10
+emerald,Pinheiros,0,4:00,6:25,0:10
+emerald,Pinheiros,0,6:26,18:30,0:07
+emerald,Pinheiros,0,18:31,00:00,0:10
+emerald,Pinheiros,1,4:00,00:00,0:10
+emerald,Hebraica-Rebouças,2,4:00,5:45,0:10
+emerald,Hebraica-Rebouças,2,5:46,9:40,0:05
+emerald,Hebraica-Rebouças,2,9:41,16:00,0:07
+emerald,Hebraica-Rebouças,2,16:01,20:20,0:05
+emerald,Hebraica-Rebouças,2,20:21,00:00,0:10
+emerald,Hebraica-Rebouças,0,4:00,6:25,0:10
+emerald,Hebraica-Rebouças,0,6:26,18:30,0:07
+emerald,Hebraica-Rebouças,0,18:31,00:00,0:10
+emerald,Hebraica-Rebouças,1,4:00,00:00,0:10
+emerald,Cidade Jardim,2,4:00,5:45,0:10
+emerald,Cidade Jardim,2,5:46,9:40,0:05
+emerald,Cidade Jardim,2,9:41,16:00,0:07
+emerald,Cidade Jardim,2,16:01,20:20,0:05
+emerald,Cidade Jardim,2,20:21,00:00,0:10
+emerald,Cidade Jardim,0,4:00,6:25,0:10
+emerald,Cidade Jardim,0,6:26,18:30,0:07
+emerald,Cidade Jardim,0,18:31,00:00,0:10
+emerald,Cidade Jardim,1,4:00,00:00,0:10
+emerald,Vila Olímpia,2,4:00,5:45,0:10
+emerald,Vila Olímpia,2,5:46,9:40,0:05
+emerald,Vila Olímpia,2,9:41,16:00,0:07
+emerald,Vila Olímpia,2,16:01,20:20,0:05
+emerald,Vila Olímpia,2,20:21,00:00,0:10
+emerald,Vila Olímpia,0,4:00,6:25,0:10
+emerald,Vila Olímpia,0,6:26,18:30,0:07
+emerald,Vila Olímpia,0,18:31,00:00,0:10
+emerald,Vila Olímpia,1,4:00,00:00,0:10
+emerald,Berrini,2,4:00,5:45,0:10
+emerald,Berrini,2,5:46,9:40,0:05
+emerald,Berrini,2,9:41,16:00,0:07
+emerald,Berrini,2,16:01,20:20,0:05
+emerald,Berrini,2,20:21,00:00,0:10
+emerald,Berrini,0,4:00,6:25,0:10
+emerald,Berrini,0,6:26,18:30,0:07
+emerald,Berrini,0,18:31,00:00,0:10
+emerald,Berrini,1,4:00,00:00,0:10
+emerald,Morumbi,2,4:00,5:45,0:10
+emerald,Morumbi,2,5:46,9:40,0:05
+emerald,Morumbi,2,9:41,16:00,0:07
+emerald,Morumbi,2,16:01,20:20,0:05
+emerald,Morumbi,2,20:21,00:00,0:10
+emerald,Morumbi,0,4:00,6:25,0:10
+emerald,Morumbi,0,6:26,18:30,0:07
+emerald,Morumbi,0,18:31,00:00,0:10
+emerald,Morumbi,1,4:00,00:00,0:10
+emerald,Granja Julieta,2,4:00,5:45,0:10
+emerald,Granja Julieta,2,5:46,9:40,0:05
+emerald,Granja Julieta,2,9:41,16:00,0:07
+emerald,Granja Julieta,2,16:01,20:20,0:05
+emerald,Granja Julieta,2,20:21,00:00,0:10
+emerald,Granja Julieta,0,4:00,6:25,0:10
+emerald,Granja Julieta,0,6:26,18:30,0:07
+emerald,Granja Julieta,0,18:31,00:00,0:10
+emerald,Granja Julieta,1,4:00,00:00,0:10
+emerald,Santo Amaro,2,4:00,5:45,0:10
+emerald,Santo Amaro,2,5:46,9:40,0:05
+emerald,Santo Amaro,2,9:41,16:00,0:07
+emerald,Santo Amaro,2,16:01,20:20,0:05
+emerald,Santo Amaro,2,20:21,00:00,0:10
+emerald,Santo Amaro,0,4:00,6:25,0:10
+emerald,Santo Amaro,0,6:26,18:30,0:07
+emerald,Santo Amaro,0,18:31,00:00,0:10
+emerald,Santo Amaro,1,4:00,00:00,0:10
+emerald,Socorro,2,4:00,5:45,0:10
+emerald,Socorro,2,5:46,9:40,0:05
+emerald,Socorro,2,9:41,16:00,0:07
+emerald,Socorro,2,16:01,20:20,0:05
+emerald,Socorro,2,20:21,00:00,0:10
+emerald,Socorro,0,4:00,6:25,0:10
+emerald,Socorro,0,6:26,18:30,0:07
+emerald,Socorro,0,18:31,00:00,0:10
+emerald,Socorro,1,4:00,00:00,0:10
+emerald,Jurubatuba,2,4:00,5:45,0:10
+emerald,Jurubatuba,2,5:46,9:40,0:05
+emerald,Jurubatuba,2,9:41,16:00,0:07
+emerald,Jurubatuba,2,16:01,20:20,0:05
+emerald,Jurubatuba,2,20:21,00:00,0:10
+emerald,Jurubatuba,0,4:00,6:25,0:10
+emerald,Jurubatuba,0,6:26,18:30,0:07
+emerald,Jurubatuba,0,18:31,00:00,0:10
+emerald,Jurubatuba,1,4:00,00:00,0:10
+emerald,Autódromo,2,4:00,5:45,0:10
+emerald,Autódromo,2,5:46,9:40,0:05
+emerald,Autódromo,2,9:41,16:00,0:07
+emerald,Autódromo,2,16:01,20:20,0:05
+emerald,Autódromo,2,20:21,00:00,0:10
+emerald,Autódromo,0,4:00,6:25,0:10
+emerald,Autódromo,0,6:26,18:30,0:07
+emerald,Autódromo,0,18:31,00:00,0:10
+emerald,Autódromo,1,4:00,00:00,0:10
+emerald,Primavera-Interlagos,2,4:00,5:45,0:10
+emerald,Primavera-Interlagos,2,5:46,9:40,0:05
+emerald,Primavera-Interlagos,2,9:41,16:00,0:07
+emerald,Primavera-Interlagos,2,16:01,20:20,0:05
+emerald,Primavera-Interlagos,2,20:21,00:00,0:10
+emerald,Primavera-Interlagos,0,4:00,6:25,0:10
+emerald,Primavera-Interlagos,0,6:26,18:30,0:07
+emerald,Primavera-Interlagos,0,18:31,00:00,0:10
+emerald,Primavera-Interlagos,1,4:00,00:00,0:10
+emerald,Grajaú,2,4:00,5:45,0:10
+emerald,Grajaú,2,5:46,9:40,0:05
+emerald,Grajaú,2,9:41,16:00,0:07
+emerald,Grajaú,2,16:01,20:20,0:05
+emerald,Grajaú,2,20:21,00:00,0:10
+emerald,Grajaú,0,4:00,6:25,0:10
+emerald,Grajaú,0,6:26,18:30,0:07
+emerald,Grajaú,0,18:31,00:00,0:10
+emerald,Grajaú,1,4:00,00:00,0:10
+turquoise,Luz,2,4:00,4:50,0:12
+turquoise,Luz,2,4:51,9:20,0:06
+turquoise,Luz,2,9:21,17:00,0:08
+turquoise,Luz,2,17:01,20:20,0:06
+turquoise,Luz,2,20:21,00:00,0:10
+turquoise,Luz,0,4:00,4:40,0:15
+turquoise,Luz,0,4:41,21:20,0:08
+turquoise,Luz,0,21:21,00:00,0:12
+turquoise,Luz,1,4:00,4:50,0:15
+turquoise,Luz,1,4:51,20:55,0:10
+turquoise,Luz,1,20:56,00:00,0:12
+turquoise,Brás,2,4:00,4:50,0:12
+turquoise,Brás,2,4:51,9:20,0:06
+turquoise,Brás,2,9:21,17:00,0:08
+turquoise,Brás,2,17:01,20:20,0:06
+turquoise,Brás,2,20:21,00:00,0:10
+turquoise,Brás,0,4:00,4:40,0:15
+turquoise,Brás,0,4:41,21:20,0:08
+turquoise,Brás,0,21:21,00:00,0:12
+turquoise,Brás,1,4:00,4:50,0:15
+turquoise,Brás,1,4:51,20:55,0:10
+turquoise,Brás,1,20:56,00:00,0:12
+turquoise,Mooca,2,4:00,4:50,0:12
+turquoise,Mooca,2,4:51,9:20,0:06
+turquoise,Mooca,2,9:21,17:00,0:08
+turquoise,Mooca,2,17:01,20:20,0:06
+turquoise,Mooca,2,20:21,00:00,0:10
+turquoise,Mooca,0,4:00,4:40,0:15
+turquoise,Mooca,0,4:41,21:20,0:08
+turquoise,Mooca,0,21:21,00:00,0:12
+turquoise,Mooca,1,4:00,4:50,0:15
+turquoise,Mooca,1,4:51,20:55,0:10
+turquoise,Mooca,1,20:56,00:00,0:12
+turquoise,Ipiranga,2,4:00,4:50,0:12
+turquoise,Ipiranga,2,4:51,9:20,0:06
+turquoise,Ipiranga,2,9:21,17:00,0:08
+turquoise,Ipiranga,2,17:01,20:20,0:06
+turquoise,Ipiranga,2,20:21,00:00,0:10
+turquoise,Ipiranga,0,4:00,4:40,0:15
+turquoise,Ipiranga,0,4:41,21:20,0:08
+turquoise,Ipiranga,0,21:21,00:00,0:12
+turquoise,Ipiranga,1,4:00,4:50,0:15
+turquoise,Ipiranga,1,4:51,20:55,0:10
+turquoise,Ipiranga,1,20:56,00:00,0:12
+turquoise,Tamanduateí,2,4:00,4:50,0:12
+turquoise,Tamanduateí,2,4:51,9:20,0:06
+turquoise,Tamanduateí,2,9:21,17:00,0:08
+turquoise,Tamanduateí,2,17:01,20:20,0:06
+turquoise,Tamanduateí,2,20:21,00:00,0:10
+turquoise,Tamanduateí,0,4:00,4:40,0:15
+turquoise,Tamanduateí,0,4:41,21:20,0:08
+turquoise,Tamanduateí,0,21:21,00:00,0:12
+turquoise,Tamanduateí,1,4:00,4:50,0:15
+turquoise,Tamanduateí,1,4:51,20:55,0:10
+turquoise,Tamanduateí,1,20:56,00:00,0:12
+turquoise,São Caetano,2,4:00,4:50,0:12
+turquoise,São Caetano,2,4:51,9:20,0:06
+turquoise,São Caetano,2,9:21,17:00,0:08
+turquoise,São Caetano,2,17:01,20:20,0:06
+turquoise,São Caetano,2,20:21,00:00,0:10
+turquoise,São Caetano,0,4:00,4:40,0:15
+turquoise,São Caetano,0,4:41,21:20,0:08
+turquoise,São Caetano,0,21:21,00:00,0:12
+turquoise,São Caetano,1,4:00,4:50,0:15
+turquoise,São Caetano,1,4:51,20:55,0:10
+turquoise,São Caetano,1,20:56,00:00,0:12
+turquoise,Utinga,2,4:00,4:50,0:12
+turquoise,Utinga,2,4:51,9:20,0:06
+turquoise,Utinga,2,9:21,17:00,0:08
+turquoise,Utinga,2,17:01,20:20,0:06
+turquoise,Utinga,2,20:21,00:00,0:10
+turquoise,Utinga,0,4:00,4:40,0:15
+turquoise,Utinga,0,4:41,21:20,0:08
+turquoise,Utinga,0,21:21,00:00,0:12
+turquoise,Utinga,1,4:00,4:50,0:15
+turquoise,Utinga,1,4:51,20:55,0:10
+turquoise,Utinga,1,20:56,00:00,0:12
+turquoise,Prefeito Saladino,2,4:00,4:50,0:12
+turquoise,Prefeito Saladino,2,4:51,9:20,0:06
+turquoise,Prefeito Saladino,2,9:21,17:00,0:08
+turquoise,Prefeito Saladino,2,17:01,20:20,0:06
+turquoise,Prefeito Saladino,2,20:21,00:00,0:10
+turquoise,Prefeito Saladino,0,4:00,4:40,0:15
+turquoise,Prefeito Saladino,0,4:41,21:20,0:08
+turquoise,Prefeito Saladino,0,21:21,00:00,0:12
+turquoise,Prefeito Saladino,1,4:00,4:50,0:15
+turquoise,Prefeito Saladino,1,4:51,20:55,0:10
+turquoise,Prefeito Saladino,1,20:56,00:00,0:12
+turquoise,Pref Celso Daniel Sto André,2,4:00,4:50,0:12
+turquoise,Pref Celso Daniel Sto André,2,4:51,9:20,0:06
+turquoise,Pref Celso Daniel Sto André,2,9:21,17:00,0:08
+turquoise,Pref Celso Daniel Sto André,2,17:01,20:20,0:06
+turquoise,Pref Celso Daniel Sto André,2,20:21,00:00,0:10
+turquoise,Pref Celso Daniel Sto André,0,4:00,4:40,0:15
+turquoise,Pref Celso Daniel Sto André,0,4:41,21:20,0:08
+turquoise,Pref Celso Daniel Sto André,0,21:21,00:00,0:12
+turquoise,Pref Celso Daniel Sto André,1,4:00,4:50,0:15
+turquoise,Pref Celso Daniel Sto André,1,4:51,20:55,0:10
+turquoise,Pref Celso Daniel Sto André,1,20:56,00:00,0:12
+turquoise,Capuava,2,4:00,4:50,0:12
+turquoise,Capuava,2,4:51,9:20,0:06
+turquoise,Capuava,2,9:21,17:00,0:08
+turquoise,Capuava,2,17:01,20:20,0:06
+turquoise,Capuava,2,20:21,00:00,0:10
+turquoise,Capuava,0,4:00,4:40,0:15
+turquoise,Capuava,0,4:41,21:20,0:08
+turquoise,Capuava,0,21:21,00:00,0:12
+turquoise,Capuava,1,4:00,4:50,0:15
+turquoise,Capuava,1,4:51,20:55,0:10
+turquoise,Capuava,1,20:56,00:00,0:12
+turquoise,Mauá,2,4:00,4:50,0:12
+turquoise,Mauá,2,4:51,9:20,0:06
+turquoise,Mauá,2,9:21,17:00,0:08
+turquoise,Mauá,2,17:01,20:20,0:06
+turquoise,Mauá,2,20:21,00:00,0:10
+turquoise,Mauá,0,4:00,4:40,0:15
+turquoise,Mauá,0,4:41,21:20,0:08
+turquoise,Mauá,0,21:21,00:00,0:12
+turquoise,Mauá,1,4:00,4:50,0:15
+turquoise,Mauá,1,4:51,20:55,0:10
+turquoise,Mauá,1,20:56,00:00,0:12
+turquoise,Guapituba,2,4:00,4:50,0:12
+turquoise,Guapituba,2,4:51,9:20,0:06
+turquoise,Guapituba,2,9:21,17:00,0:08
+turquoise,Guapituba,2,17:01,20:20,0:06
+turquoise,Guapituba,2,20:21,00:00,0:10
+turquoise,Guapituba,0,4:00,4:40,0:15
+turquoise,Guapituba,0,4:41,21:20,0:08
+turquoise,Guapituba,0,21:21,00:00,0:12
+turquoise,Guapituba,1,4:00,4:50,0:15
+turquoise,Guapituba,1,4:51,20:55,0:10
+turquoise,Guapituba,1,20:56,00:00,0:12
+turquoise,Ribeirão Pires,2,4:00,4:50,0:12
+turquoise,Ribeirão Pires,2,4:51,9:20,0:06
+turquoise,Ribeirão Pires,2,9:21,17:00,0:08
+turquoise,Ribeirão Pires,2,17:01,20:20,0:06
+turquoise,Ribeirão Pires,2,20:21,00:00,0:10
+turquoise,Ribeirão Pires,0,4:00,4:40,0:15
+turquoise,Ribeirão Pires,0,4:41,21:20,0:08
+turquoise,Ribeirão Pires,0,21:21,00:00,0:12
+turquoise,Ribeirão Pires,1,4:00,4:50,0:15
+turquoise,Ribeirão Pires,1,4:51,20:55,0:10
+turquoise,Ribeirão Pires,1,20:56,00:00,0:12
+turquoise,Rio Grande da Serra,2,4:00,4:50,0:12
+turquoise,Rio Grande da Serra,2,4:51,9:20,0:06
+turquoise,Rio Grande da Serra,2,9:21,17:00,0:08
+turquoise,Rio Grande da Serra,2,17:01,20:20,0:06
+turquoise,Rio Grande da Serra,2,20:21,00:00,0:10
+turquoise,Rio Grande da Serra,0,4:00,4:40,0:15
+turquoise,Rio Grande da Serra,0,4:41,21:20,0:08
+turquoise,Rio Grande da Serra,0,21:21,00:00,0:12
+turquoise,Rio Grande da Serra,1,4:00,4:50,0:15
+turquoise,Rio Grande da Serra,1,4:51,20:55,0:10
+turquoise,Rio Grande da Serra,1,20:56,00:00,0:12
+coral,Luz,2,4:00,5:00,0:08
+coral,Luz,2,5:01,8:00,0:09
+coral,Luz,2,8:01,20:20,0:08
+coral,Luz,2,20:21,23:25,0:10
+coral,Luz,2,23:26,0:00,0:12
+coral,Luz,0,4:00,18:20,0:08
+coral,Luz,0,18:21,0:00,0:10
+coral,Luz,1,4:00,4:20:00,0:18
+coral,Luz,1,4:21,00:00,0:10
+coral,Brás,2,4:00,5:00,0:08
+coral,Brás,2,5:01,8:00,0:09
+coral,Brás,2,8:01,20:20,0:08
+coral,Brás,2,20:21,23:25,0:10
+coral,Brás,2,23:26,0:00,0:12
+coral,Brás,0,4:00,18:20,0:08
+coral,Brás,0,18:21,0:00,0:10
+coral,Brás,1,4:00,4:20:00,0:18
+coral,Brás,1,4:21,00:00,0:10
+coral,Tatuapé,2,4:00,5:00,0:08
+coral,Tatuapé,2,5:01,8:00,0:09
+coral,Tatuapé,2,8:01,20:20,0:08
+coral,Tatuapé,2,20:21,23:25,0:10
+coral,Tatuapé,2,23:26,0:00,0:12
+coral,Tatuapé,0,4:00,18:20,0:08
+coral,Tatuapé,0,18:21,0:00,0:10
+coral,Tatuapé,1,4:00,4:20:00,0:18
+coral,Tatuapé,1,4:21,00:00,0:10
+coral,Corinthians - Itaquera,2,4:00,5:00,0:08
+coral,Corinthians - Itaquera,2,5:01,8:00,0:09
+coral,Corinthians - Itaquera,2,8:01,20:20,0:08
+coral,Corinthians - Itaquera,2,20:21,23:25,0:10
+coral,Corinthians - Itaquera,2,23:26,0:00,0:12
+coral,Corinthians - Itaquera,0,4:00,18:20,0:08
+coral,Corinthians - Itaquera,0,18:21,0:00,0:10
+coral,Corinthians - Itaquera,1,4:00,4:20:00,0:18
+coral,Corinthians - Itaquera,1,4:21,00:00,0:10
+coral,Dom Bosco,2,4:00,5:00,0:08
+coral,Dom Bosco,2,5:01,8:00,0:09
+coral,Dom Bosco,2,8:01,20:20,0:08
+coral,Dom Bosco,2,20:21,23:25,0:10
+coral,Dom Bosco,2,23:26,0:00,0:12
+coral,Dom Bosco,0,4:00,18:20,0:08
+coral,Dom Bosco,0,18:21,0:00,0:10
+coral,Dom Bosco,1,4:00,4:20:00,0:18
+coral,Dom Bosco,1,4:21,00:00,0:10
+coral,José Bonifácio,2,4:00,5:00,0:08
+coral,José Bonifácio,2,5:01,8:00,0:09
+coral,José Bonifácio,2,8:01,20:20,0:08
+coral,José Bonifácio,2,20:21,23:25,0:10
+coral,José Bonifácio,2,23:26,0:00,0:12
+coral,José Bonifácio,0,4:00,18:20,0:08
+coral,José Bonifácio,0,18:21,0:00,0:10
+coral,José Bonifácio,1,4:00,4:20:00,0:18
+coral,José Bonifácio,1,4:21,00:00,0:10
+coral,Guaianases,2,4:00,5:00,0:08
+coral,Guaianases,2,5:01,8:00,0:09
+coral,Guaianases,2,8:01,20:20,0:08
+coral,Guaianases,2,20:21,23:25,0:10
+coral,Guaianases,2,23:26,0:00,0:12
+coral,Guaianases,0,4:00,18:20,0:08
+coral,Guaianases,0,18:21,0:00,0:10
+coral,Guaianases,1,4:00,4:20:00,0:18
+coral,Guaianases,1,4:21,00:00,0:10
+coral,Antônio Gianetti Neto,2,4:00,5:00,0:08
+coral,Antônio Gianetti Neto,2,5:01,8:00,0:09
+coral,Antônio Gianetti Neto,2,8:01,20:20,0:08
+coral,Antônio Gianetti Neto,2,20:21,23:25,0:10
+coral,Antônio Gianetti Neto,2,23:26,0:00,0:12
+coral,Antônio Gianetti Neto,0,4:00,18:20,0:08
+coral,Antônio Gianetti Neto,0,18:21,0:00,0:10
+coral,Antônio Gianetti Neto,1,4:00,4:20:00,0:18
+coral,Antônio Gianetti Neto,1,4:21,00:00,0:10
+coral,Ferraz de Vasconcelos,2,4:00,5:00,0:08
+coral,Ferraz de Vasconcelos,2,5:01,8:00,0:09
+coral,Ferraz de Vasconcelos,2,8:01,20:20,0:08
+coral,Ferraz de Vasconcelos,2,20:21,23:25,0:10
+coral,Ferraz de Vasconcelos,2,23:26,0:00,0:12
+coral,Ferraz de Vasconcelos,0,4:00,18:20,0:08
+coral,Ferraz de Vasconcelos,0,18:21,0:00,0:10
+coral,Ferraz de Vasconcelos,1,4:00,4:20:00,0:18
+coral,Ferraz de Vasconcelos,1,4:21,00:00,0:10
+coral,Poá,2,4:00,5:00,0:08
+coral,Poá,2,5:01,8:00,0:09
+coral,Poá,2,8:01,20:20,0:08
+coral,Poá,2,20:21,23:25,0:10
+coral,Poá,2,23:26,0:00,0:12
+coral,Poá,0,4:00,18:20,0:08
+coral,Poá,0,18:21,0:00,0:10
+coral,Poá,1,4:00,4:20:00,0:18
+coral,Poá,1,4:21,00:00,0:10
+coral,Calmon Viana,2,4:00,5:00,0:08
+coral,Calmon Viana,2,5:01,8:00,0:09
+coral,Calmon Viana,2,8:01,20:20,0:08
+coral,Calmon Viana,2,20:21,23:25,0:10
+coral,Calmon Viana,2,23:26,0:00,0:12
+coral,Calmon Viana,0,4:00,18:20,0:08
+coral,Calmon Viana,0,18:21,0:00,0:10
+coral,Calmon Viana,1,4:00,4:20:00,0:18
+coral,Calmon Viana,1,4:21,00:00,0:10
+coral,Suzano,2,4:00,5:00,0:08
+coral,Suzano,2,5:01,8:00,0:09
+coral,Suzano,2,8:01,20:20,0:08
+coral,Suzano,2,20:21,23:25,0:10
+coral,Suzano,2,23:26,0:00,0:12
+coral,Suzano,0,4:00,18:20,0:08
+coral,Suzano,0,18:21,0:00,0:10
+coral,Suzano,1,4:00,4:20:00,0:18
+coral,Suzano,1,4:21,00:00,0:10
+coral,Jundiapeba,2,4:00,5:00,0:08
+coral,Jundiapeba,2,5:01,8:00,0:09
+coral,Jundiapeba,2,8:01,20:20,0:08
+coral,Jundiapeba,2,20:21,23:25,0:10
+coral,Jundiapeba,2,23:26,0:00,0:12
+coral,Jundiapeba,0,4:00,18:20,0:08
+coral,Jundiapeba,0,18:21,0:00,0:10
+coral,Jundiapeba,1,4:00,4:20:00,0:18
+coral,Jundiapeba,1,4:21,00:00,0:10
+coral,Brás Cubas,2,4:00,5:00,0:08
+coral,Brás Cubas,2,5:01,8:00,0:09
+coral,Brás Cubas,2,8:01,20:20,0:08
+coral,Brás Cubas,2,20:21,23:25,0:10
+coral,Brás Cubas,2,23:26,0:00,0:12
+coral,Brás Cubas,0,4:00,18:20,0:08
+coral,Brás Cubas,0,18:21,0:00,0:10
+coral,Brás Cubas,1,4:00,4:20:00,0:18
+coral,Brás Cubas,1,4:21,00:00,0:10
+coral,Mogi das Cruzes,2,4:00,5:00,0:08
+coral,Mogi das Cruzes,2,5:01,8:00,0:09
+coral,Mogi das Cruzes,2,8:01,20:20,0:08
+coral,Mogi das Cruzes,2,20:21,23:25,0:10
+coral,Mogi das Cruzes,2,23:26,0:00,0:12
+coral,Mogi das Cruzes,0,4:00,18:20,0:08
+coral,Mogi das Cruzes,0,18:21,0:00,0:10
+coral,Mogi das Cruzes,1,4:00,4:20:00,0:18
+coral,Mogi das Cruzes,1,4:21,00:00,0:10
+coral,Estudantes,2,4:00,5:00,0:08
+coral,Estudantes,2,5:01,8:00,0:09
+coral,Estudantes,2,8:01,20:20,0:08
+coral,Estudantes,2,20:21,23:25,0:10
+coral,Estudantes,2,23:26,0:00,0:12
+coral,Estudantes,0,4:00,18:20,0:08
+coral,Estudantes,0,18:21,0:00,0:10
+coral,Estudantes,1,4:00,4:20:00,0:18
+coral,Estudantes,1,4:21,00:00,0:10
+coralexpress,Luz,2,4:00,4:30,0:10
+coralexpress,Luz,2,4:31,9:10,0:05
+coralexpress,Luz,2,9:11,15:55,0:07
+coralexpress,Luz,2,15:56,20:10,0:05
+coralexpress,Luz,2,20:11,23:35,0:08
+coralexpress,Luz,2,23:36,0:00,0:10
+coralexpress,Luz,0,4:00,5:55,0:08
+coralexpress,Luz,0,5:56,18:30,0:07
+coralexpress,Luz,0,18:31,00:00,0:10
+coralexpress,Luz,1,4:00,00:00,0:10
+coralexpress,Corinthians - Itaquera,2,4:00,4:30,0:10
+coralexpress,Corinthians - Itaquera,2,4:31,9:10,0:05
+coralexpress,Corinthians - Itaquera,2,9:11,15:55,0:07
+coralexpress,Corinthians - Itaquera,2,15:56,20:10,0:05
+coralexpress,Corinthians - Itaquera,2,20:11,23:35,0:08
+coralexpress,Corinthians - Itaquera,2,23:36,0:00,0:10
+coralexpress,Corinthians - Itaquera,0,4:00,5:55,0:08
+coralexpress,Corinthians - Itaquera,0,5:56,18:30,0:07
+coralexpress,Corinthians - Itaquera,0,18:31,00:00,0:10
+coralexpress,Corinthians - Itaquera,1,4:00,00:00,0:10
+coralexpress,Tatuapé,2,4:00,4:30,0:10
+coralexpress,Tatuapé,2,4:31,9:10,0:05
+coralexpress,Tatuapé,2,9:11,15:55,0:07
+coralexpress,Tatuapé,2,15:56,20:10,0:05
+coralexpress,Tatuapé,2,20:11,23:35,0:08
+coralexpress,Tatuapé,2,23:36,0:00,0:10
+coralexpress,Tatuapé,0,4:00,5:55,0:08
+coralexpress,Tatuapé,0,5:56,18:30,0:07
+coralexpress,Tatuapé,0,18:31,00:00,0:10
+coralexpress,Tatuapé,1,4:00,00:00,0:10
+coralexpress,Brás,2,4:00,4:30,0:10
+coralexpress,Brás,2,4:31,9:10,0:05
+coralexpress,Brás,2,9:11,15:55,0:07
+coralexpress,Brás,2,15:56,20:10,0:05
+coralexpress,Brás,2,20:11,23:35,0:08
+coralexpress,Brás,2,23:36,0:00,0:10
+coralexpress,Brás,0,4:00,5:55,0:08
+coralexpress,Brás,0,5:56,18:30,0:07
+coralexpress,Brás,0,18:31,00:00,0:10
+coralexpress,Brás,1,4:00,00:00,0:10
+coralexpress,Dom Bosco,2,4:00,4:30,0:10
+coralexpress,Dom Bosco,2,4:31,9:10,0:05
+coralexpress,Dom Bosco,2,9:11,15:55,0:07
+coralexpress,Dom Bosco,2,15:56,20:10,0:05
+coralexpress,Dom Bosco,2,20:11,23:35,0:08
+coralexpress,Dom Bosco,2,23:36,0:00,0:10
+coralexpress,Dom Bosco,0,4:00,5:55,0:08
+coralexpress,Dom Bosco,0,5:56,18:30,0:07
+coralexpress,Dom Bosco,0,18:31,00:00,0:10
+coralexpress,Dom Bosco,1,4:00,00:00,0:10
+coralexpress,José Bonifácio,2,4:00,4:30,0:10
+coralexpress,José Bonifácio,2,4:31,9:10,0:05
+coralexpress,José Bonifácio,2,9:11,15:55,0:07
+coralexpress,José Bonifácio,2,15:56,20:10,0:05
+coralexpress,José Bonifácio,2,20:11,23:35,0:08
+coralexpress,José Bonifácio,2,23:36,0:00,0:10
+coralexpress,José Bonifácio,0,4:00,5:55,0:08
+coralexpress,José Bonifácio,0,5:56,18:30,0:07
+coralexpress,José Bonifácio,0,18:31,00:00,0:10
+coralexpress,José Bonifácio,1,4:00,00:00,0:10
+coralexpress,Guaianases,2,4:00,4:30,0:10
+coralexpress,Guaianases,2,4:31,9:10,0:05
+coralexpress,Guaianases,2,9:11,15:55,0:07
+coralexpress,Guaianases,2,15:56,20:10,0:05
+coralexpress,Guaianases,2,20:11,23:35,0:08
+coralexpress,Guaianases,2,23:36,0:00,0:10
+coralexpress,Guaianases,0,4:00,5:55,0:08
+coralexpress,Guaianases,0,5:56,18:30,0:07
+coralexpress,Guaianases,0,18:31,00:00,0:10
+coralexpress,Guaianases,1,4:00,00:00,0:10
+saffire,Tatuapé,2,4:00,4:10,0:12
+saffire,Tatuapé,2,4:11,8:25,0:06
+saffire,Tatuapé,2,8:26,15:50,0:08
+saffire,Tatuapé,2,15:51,20:20,0:06
+saffire,Tatuapé,2,20:21,23:40,0:10
+saffire,Tatuapé,2,23:41,00:00,0:15
+saffire,Tatuapé,0,4:00,19:05,0:08
+saffire,Tatuapé,0,19:06,00:00,0:20
+saffire,Tatuapé,1,4:00,20:00,0:10
+saffire,Tatuapé,1,20:01,00:00,:20
+saffire,Brás,2,4:00,4:10,0:12
+saffire,Brás,2,4:11,8:25,0:06
+saffire,Brás,2,8:26,15:50,0:08
+saffire,Brás,2,15:51,20:20,0:06
+saffire,Brás,2,20:21,23:40,0:10
+saffire,Brás,2,23:41,00:00,0:15
+saffire,Brás,0,4:00,19:05,0:08
+saffire,Brás,0,19:06,00:00,0:20
+saffire,Brás,1,4:00,20:00,0:10
+saffire,Brás,1,20:01,00:00,:20
+saffire,Calmon Viana,2,4:00,4:10,0:12
+saffire,Calmon Viana,2,4:11,8:25,0:06
+saffire,Calmon Viana,2,8:26,15:50,0:08
+saffire,Calmon Viana,2,15:51,20:20,0:06
+saffire,Calmon Viana,2,20:21,23:40,0:10
+saffire,Calmon Viana,2,23:41,00:00,0:15
+saffire,Calmon Viana,0,4:00,19:05,0:08
+saffire,Calmon Viana,0,19:06,00:00,0:20
+saffire,Calmon Viana,1,4:00,20:00,0:10
+saffire,Calmon Viana,1,20:01,00:00,:20
+saffire,Engenheiro Goulart,2,4:00,4:10,0:12
+saffire,Engenheiro Goulart,2,4:11,8:25,0:06
+saffire,Engenheiro Goulart,2,8:26,15:50,0:08
+saffire,Engenheiro Goulart,2,15:51,20:20,0:06
+saffire,Engenheiro Goulart,2,20:21,23:40,0:10
+saffire,Engenheiro Goulart,2,23:41,00:00,0:15
+saffire,Engenheiro Goulart,0,4:00,19:05,0:08
+saffire,Engenheiro Goulart,0,19:06,00:00,0:20
+saffire,Engenheiro Goulart,1,4:00,20:00,0:10
+saffire,Engenheiro Goulart,1,20:01,00:00,:20
+saffire,USP Leste,2,4:00,4:10,0:12
+saffire,USP Leste,2,4:11,8:25,0:06
+saffire,USP Leste,2,8:26,15:50,0:08
+saffire,USP Leste,2,15:51,20:20,0:06
+saffire,USP Leste,2,20:21,23:40,0:10
+saffire,USP Leste,2,23:41,00:00,0:15
+saffire,USP Leste,0,4:00,19:05,0:08
+saffire,USP Leste,0,19:06,00:00,0:20
+saffire,USP Leste,1,4:00,20:00,0:10
+saffire,USP Leste,1,20:01,00:00,:20
+saffire,Comendador Ermelino,2,4:00,4:10,0:12
+saffire,Comendador Ermelino,2,4:11,8:25,0:06
+saffire,Comendador Ermelino,2,8:26,15:50,0:08
+saffire,Comendador Ermelino,2,15:51,20:20,0:06
+saffire,Comendador Ermelino,2,20:21,23:40,0:10
+saffire,Comendador Ermelino,2,23:41,00:00,0:15
+saffire,Comendador Ermelino,0,4:00,19:05,0:08
+saffire,Comendador Ermelino,0,19:06,00:00,0:20
+saffire,Comendador Ermelino,1,4:00,20:00,0:10
+saffire,Comendador Ermelino,1,20:01,00:00,:20
+saffire,São Miguel Paulista,2,4:00,4:10,0:12
+saffire,São Miguel Paulista,2,4:11,8:25,0:06
+saffire,São Miguel Paulista,2,8:26,15:50,0:08
+saffire,São Miguel Paulista,2,15:51,20:20,0:06
+saffire,São Miguel Paulista,2,20:21,23:40,0:10
+saffire,São Miguel Paulista,2,23:41,00:00,0:15
+saffire,São Miguel Paulista,0,4:00,19:05,0:08
+saffire,São Miguel Paulista,0,19:06,00:00,0:20
+saffire,São Miguel Paulista,1,4:00,20:00,0:10
+saffire,São Miguel Paulista,1,20:01,00:00,:20
+saffire,Jardim Helena-Vila Mara,2,4:00,4:10,0:12
+saffire,Jardim Helena-Vila Mara,2,4:11,8:25,0:06
+saffire,Jardim Helena-Vila Mara,2,8:26,15:50,0:08
+saffire,Jardim Helena-Vila Mara,2,15:51,20:20,0:06
+saffire,Jardim Helena-Vila Mara,2,20:21,23:40,0:10
+saffire,Jardim Helena-Vila Mara,2,23:41,00:00,0:15
+saffire,Jardim Helena-Vila Mara,0,4:00,19:05,0:08
+saffire,Jardim Helena-Vila Mara,0,19:06,00:00,0:20
+saffire,Jardim Helena-Vila Mara,1,4:00,20:00,0:10
+saffire,Jardim Helena-Vila Mara,1,20:01,00:00,:20
+saffire,Itaim Paulista,2,4:00,4:10,0:12
+saffire,Itaim Paulista,2,4:11,8:25,0:06
+saffire,Itaim Paulista,2,8:26,15:50,0:08
+saffire,Itaim Paulista,2,15:51,20:20,0:06
+saffire,Itaim Paulista,2,20:21,23:40,0:10
+saffire,Itaim Paulista,2,23:41,00:00,0:15
+saffire,Itaim Paulista,0,4:00,19:05,0:08
+saffire,Itaim Paulista,0,19:06,00:00,0:20
+saffire,Itaim Paulista,1,4:00,20:00,0:10
+saffire,Itaim Paulista,1,20:01,00:00,:20
+saffire,Jardim Romano,2,4:00,4:10,0:12
+saffire,Jardim Romano,2,4:11,8:25,0:06
+saffire,Jardim Romano,2,8:26,15:50,0:08
+saffire,Jardim Romano,2,15:51,20:20,0:06
+saffire,Jardim Romano,2,20:21,23:40,0:10
+saffire,Jardim Romano,2,23:41,00:00,0:15
+saffire,Jardim Romano,0,4:00,19:05,0:08
+saffire,Jardim Romano,0,19:06,00:00,0:20
+saffire,Jardim Romano,1,4:00,20:00,0:10
+saffire,Jardim Romano,1,20:01,00:00,:20
+saffire,Engenheiro Manoel Feio,2,4:00,4:10,0:12
+saffire,Engenheiro Manoel Feio,2,4:11,8:25,0:06
+saffire,Engenheiro Manoel Feio,2,8:26,15:50,0:08
+saffire,Engenheiro Manoel Feio,2,15:51,20:20,0:06
+saffire,Engenheiro Manoel Feio,2,20:21,23:40,0:10
+saffire,Engenheiro Manoel Feio,2,23:41,00:00,0:15
+saffire,Engenheiro Manoel Feio,0,4:00,19:05,0:08
+saffire,Engenheiro Manoel Feio,0,19:06,00:00,0:20
+saffire,Engenheiro Manoel Feio,1,4:00,20:00,0:10
+saffire,Engenheiro Manoel Feio,1,20:01,00:00,0:20
+saffire,Itaquaquecetuba,2,4:00,4:10,0:12
+saffire,Itaquaquecetuba,2,4:11,8:25,0:06
+saffire,Itaquaquecetuba,2,8:26,15:50,0:08
+saffire,Itaquaquecetuba,2,15:51,20:20,0:06
+saffire,Itaquaquecetuba,2,20:21,23:40,0:10
+saffire,Itaquaquecetuba,2,23:41,00:00,0:15
+saffire,Itaquaquecetuba,0,4:00,19:05,0:08
+saffire,Itaquaquecetuba,0,19:06,00:00,0:20
+saffire,Itaquaquecetuba,1,4:00,20:00,0:10
+saffire,Itaquaquecetuba,1,20:01,00:00,0:20
+saffire,Aracaré,2,4:00,4:10,0:12
+saffire,Aracaré,2,4:11,8:25,0:06
+saffire,Aracaré,2,8:26,15:50,0:08
+saffire,Aracaré,2,15:51,20:20,0:06
+saffire,Aracaré,2,20:21,23:40,0:10
+saffire,Aracaré,2,23:41,00:00,0:15
+saffire,Aracaré,0,4:00,19:05,0:08
+saffire,Aracaré,0,19:06,00:00,0:20
+saffire,Aracaré,1,4:00,20:00,0:10
+saffire,Aracaré,1,20:01,00:00,0:20
+orca2,Tamanduateí,2,4:40,8:30,
+orca2,Sacomã,2,4:40,8:30,
+orca2,Tamanduateí,2,17:00,21:00,
+orca2,Sacomã,2,17:00,21:00,
+orca1,Vila Madalena,2,6:00,21:00,0:05
+orca1,Cidade Universitária,2,6:00,21:00,0:05
+orca3,Zoológico,2,8:30,17:00,
+orca3,Jabaquara,2,8:30,17:00,
+orca3,Zoológico,0,8:30,17:00,
+orca3,Jabaquara,0,8:30,17:00,
+orca3,Zoológico,1,8:30,17:00,
+orca3,Jabaquara,1,8:30,17:00,
+orca1,Vila Madalena,2,21:01,22:30,0:20
+orca1,Cidade Universitária,2,21:01,22:30,0:20
+et1,Luz,0,8:30,8:30,1:30
+et2,Luz,1,8:30,8:30,1:30
+et3,Luz,1,8:30,8:30,1:30
+et1,Jundiaí,0,16:30,16:30,1:30
+et2,Mogi das Cruzes,1,16:30,16:30,1:30
+et3,Paranapiacaba,1,16:30,16:30,1:30
+et2,Santo André,1,9:00,9:00,

@@ -1,0 +1,11 @@
+42
+103
+113
+127
+138
+157
+229
+
+
+select sl.slID, s.name, l.name, lti.frequency, lti.dayID, lti.startTime, lti.stopTime from stationline sl, linhas l, stations s, linhours_to_insert lti
+where s.stationID = sl.stationID AND sl.lineID = l.lineID AND lti.stationName = s.name AND sl.slID IN (229, 157, 113, 42, 103, 138, 127)

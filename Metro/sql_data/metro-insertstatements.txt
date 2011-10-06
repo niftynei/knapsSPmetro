@@ -1,0 +1,62 @@
+CREATE VIEW linhas_insert AS 
+SELECT l.name, l.displayName, l.number, l.color, l.iconURL, l.imgURL, l.tarifa, c.name AS companyName
+FROM linhas l
+INNER JOIN companies c ON c.companyID = l.companyID;
+
+CREATE TRIGGER insert_linhas INSTEAD OF INSERT ON linhas_insert
+BEGIN
+INSERT INTO linhas (name, displayName, number, color, iconURL, imgURL, tarifa, companyID)
+SELECT NEW.name, NEW.displayName, NEW.number, NEW.color, NEW.iconURL, NEW.imgURL, NEW.tarifa, companies.companyID
+FROM companies
+WHERE companies.name = NEW.companyName;
+END;
+
+CREATE VIEW stationline_insert AS
+SELECT l.name AS lineName, s.name AS stationName, sl.routeNumber, sl.notOpen
+FROM stationline sl
+INNER JOIN linhas l ON l.lineID = sl.lineID
+INNER JOIN station s ON s.stationID = sl.stationID
+
+CREATE TRIGGER insert_stationline INSTEAD OF INSERT ON stationline_insert
+BEGIN
+INSERT INTO stationline (lineID, stationID, routeNumber, notOpen)
+SELECT l.lineID, s.stationID, NEW.routeNumber, NEW.notOpen
+FROM stationline sl
+INNER JOIN linhas l ON l.lineID = sl.lineID
+INNER JOIN station s ON s.stationID = sl.stationID
+WHERE l.name = NEW.lineName AND s.name = NEW.stationName;
+END;
+
+CREATE VIEW linehours_insert AS
+SELECT l.name as lineName, s.name as stationName, lh.dayID, lh.startTime, lh.stopTime, lh.frequency
+FROM stationline sl
+INNER JOIN linhas l ON l.lineID = sl.lineID
+INNER JOIN stations s ON s.stationID = sl.stationID
+
+CREATE TRIGGER insert_linehours INSTEAD OF INSERT ON linehours_insert
+BEGIN
+INSERT INTO linehours (slID, dayID, startTime, stopTime, frequency)
+SELECT sl.slID, NEW.dayID, NEW.startTime, NEW.stopTime, NEW.frequency
+FROM stationline sl
+INNER JOIN linhas l ON l.lineID = sl.lineID
+INNER JOIN stations s ON s.stationID = sl.stationID
+WHERE s.name = NEW.stationName AND l.name = NEW.lineName;
+END;
+
+INSERT INTO companies (name, telephone)
+VALUES (:name, :telephone);
+
+INSERT INTO stations (name, displayName, mapURL, bikeRack, bikePark, bikeLoan, elevator)
+VALUES (:name, :displayName, :mapUrl, :bikeRack, :bikePark, :bikeLoan, :elevator);
+
+INSERT INTO days (dayID, dayName)
+VALUES (:dayID, :dayName);
+
+INSERT INTO linhas_insert (name, displayName, number, color, iconURl, imgURL, tarifa, companyName)
+VALUES (:name, :displayName, :number, :color, :iconURL, :imgURL, :tarifa, :companyName);
+
+INSERT INTO stationline_insert (lineName, stationName, routeNumber, notOpen)
+VALUES (:lineName, :stationName, :routeNumber, :notOpen);
+
+INSERT INTO linehours_insert (lineName, stationName, dayID, startTime, stopTime, frequency)
+VALUES (:lineName, :stationName, :dayID, :startTime, :stopTime, :frequency);

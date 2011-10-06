@@ -1,0 +1,164 @@
+name,displayName,mapURL,bikeRack,bikePark,bikeLoan,parking,elevator
+Água Branca,Água Branca,,,,,,
+Alto do Ipiranga,Alto do Ipiranga,alto_ipiranga,,,,,1
+Amador Bueno,Amador Bueno,,,,,,
+Ambuitá,Ambuitá,,,,,,
+Ana Rosa,Ana Rosa,fgana_rosa,,,,,1
+Anhangabaú,Anhangabaú,fganhang,,,1,,1
+Antônio Gianetti Neto,Antônio Gianetti Neto,,,,,,1
+Antônio João,Antônio João,,,,,,
+Aracaré,Aracaré,,,,,,
+Armênia,Armênia,fgarmenia,,,1,,1
+Artur Alvim,Artur Alvim,fgalvin,,1,,,1
+Autódromo,Autódromo,,1,,,,1
+Baltazar Fidélis,Baltazar Fidélis,,,,,,
+Barueri,Barueri,,,,,,
+Belém,Belém,fgbelem,,1,,,1
+Berrini,Berrini,,,,,,1
+Botujuru,Botujuru,,,,,,
+Brás,Brás,fgmabras,,,1,1,1
+Brás Cubas,Brás Cubas,,,,,,
+Bresser-Moóca,Bresser-Moóca,fgbresser,,,,1,1
+Brigadeiro,Brigadeiro,fgbrigadeiro,,,,,1
+Butantã,Butantã,,1,,,,1
+Caieiras,Caieiras,,1,,,,
+Calmon Viana,Calmon Viana,,1,,,,1
+Campo Limpo,Campo Limpo,mp_campo_limpo,,1,,,1
+Campo Limpo Paulista,Campo Limpo Paulista,,,,,,
+Capão Redondo,Capão Redondo,mp_capao_redondo,,1,,,1
+Capuava,Capuava,,,,,,
+Carandiru,Carandiru,fgmacara,,,,,
+Carapicuíba,Carapicuíba,fgmacarr,,,,,
+Carrão,Carrão,,,,1,,1
+Ceasa,Ceasa,,1,,,,1
+Chácara Klabin,Chácara Klabin,chacara_klabin,,,,,1
+Cidade Jardim,Cidade Jardim,,,,,,1
+Cidade Universitária,Cidade Universitária,,1,,,,1
+Cimenrita,Cimenrita,,,,,,
+Clínicas,Clínicas,fgclinicas,,,,,1
+Comandante Sampaio,Comandante Sampaio,,,,,,
+Comendador Ermelino,Comendador Ermelino,,1,,,,1
+Conceição,Conceição,fgmaconc,,,,,1
+Congonhas,Congonhas - São Paulo Airport,,,,,,
+Consolação,Consolação,fgconsolacao,,,,,1
+Corinthians - Itaquera,Corinthians - Itaquera,fgmaitaquera,,,1,1,1
+Diadema,Diadema,,,,,,
+Dom Bosco,Dom Bosco,,,,,,1
+Domingos de Moraes,Domingos de Moraes,,,,,,
+Engenheiro Cardoso,Engenheiro Cardoso,,,,,,1
+Engenheiro Goulart,Engenheiro Goulart,,,,,,
+Engenheiro Manoel Feio,Engenheiro Manoel Feio,,,,,,
+Estudantes,Estudantes,,,,,,
+Faria Lima,Faria Lima,,,,,,1
+Ferraz de Vasconcelos,Ferraz de Vasconcelos,,,,,,
+Ferrazópolis,Ferrazópolis,,,,,,
+Fradique Coutinho,Fradique Coutinho,,,,,,
+Francisco Morato,Francisco Morato,,,,,,
+Franco da Rocha,Franco da Rocha,,,,,,
+General Miguel Costa,General Miguel Costa,,,,,,
+Giovanni Gronchi,Giovanni Gronchi,mp_giovanni_gronchi,,,,,1
+Grajaú,Grajaú,,1,,,,1
+Granja Julieta,Granja Julieta,,,,,,1
+Guaianases,Guaianases,,,,,1,
+Guapituba,Guapituba,,,,,,
+Guarulhos,Guarulhos - São Paulo International Airport ,,,,,,
+Guilhermina-Esperança,Guilhermina-Esperança,fgmaguil,,,1,,1
+Hebraica-Rebouças,Hebraica-Rebouças,,,,,,1
+Higienopólis - Mackenzie,Higienopólis - Mackenzie,,,,,,
+Imperatriz Leopoldina,Imperatriz Leopoldina,,,,,,
+Ipiranga,Ipiranga,,,,,,
+Itaim Paulista,Itaim Paulista,,1,,,,1
+Itapevi,Itapevi,,1,,,,1
+Itaquaquecetuba,Itaquaquecetuba,,,,,,1
+Jabaquara,Jabaquara,fgmajaba,1,,,,1
+Jardim Belval,Jadrim Belval,,,,,,
+Jandira,Jandira,,1,,,,1
+Jaraguá,Jaraguá,,,,,,
+Jardim Helena-Vila Mara,Jardim Helena-Vila Mara,,1,,,,1
+Jardim Romano,Jardim Romano,,1,,,,1
+Jardim São Paulo,Jardim São Paulo,fgmajdsp,,,,,1
+Jardim Silveira,Jardim Silveira,,,1,,,
+José Bonifácio,José Bonifácio,,,,,,1
+Júlio Prestes,Júlio Prestes,,,,,,
+Jundiaí,Jundiaí,,,,,,
+Jundiapeba,Jundiapeba,,,,,,
+Jurubatuba,Jurubatuba,,1,,,,1
+Lapa,Lapa,,,,,,
+Lapa,Lapa,,,,,,
+Largo Treze,Largo Treze,mp_largo_13,,,,,1
+Liberdade,Liberdade,fgmalibe,,,1,,
+Luz,Luz,fgmaluz,,,,,
+Marechal Deodoro,Marechal Deodoro,fgmamare,,,1,1,1
+Mauá,Mauá,,1,,,,
+Mogi das Cruzes,Mogi das Cruzes,,,,,,
+Mooca,Mooca,,,,,,
+Morumbi,Morumbi,,,,,,1
+Osasco,Osasco,,,,,,1
+Oscar Freire,Oscar Freire,,,,,,
+Palmeiras-Barra Funda ,Palmeiras-Barra Funda ,fgbarra,,,1,,1
+Parada Inglesa,Parada Inglesa,fgmapain,,,,,1
+Paraíso,Paraíso,fgparaiso,,,1,,1
+Paranapiacaba,Paranapiacaba,,,,,,
+Patriarca,Patriarca,fgmapatr,,,,,1
+Paulista,Paulista,,,,,,1
+Pedro II,Pedro II,fgmapedr,,,,,1
+Penha,Penha,fgmapenh,,1,,,1
+Perus,Perus,,,,,,
+Pinheiros,Pinheiros,,1,,,,1
+Piqueri,Piqueri,,,,,,
+Piraporinha,Piraporinha,,,,,,
+Pirituba,Pirituba,,,,,,
+Poá,Poá,,,,,,
+Portuguesa-Tietê,Portuguesa-Tietê,fgmatiet,,,,,1
+Praça da Árvore,Praça da Árvore,fgmaparv,,,,,
+Prefeito Saladino,Prefeito Saladino,,,,,,
+Presidente Altino,Presidente Altino,,,,,,1
+Primavera-Interlagos,Primavera-Interlagos,,1,,,,1
+Quitaúna,Quitaúna,,,,,,
+República,República,fgmarepu,,,,,1
+Ribeirão Pires,Ribeirão Pires,,,,,,
+Rio Grande da Serra,Rio Grande da Serra,,,,,,
+Sacomã,Sacomã,sacoma,,,,,1
+Sagrado Coração,Sagrado Coração,,,,,,
+Santa Cecília,Santa Cecília,fgmastce,,,1,,1
+Santa Cruz,Santa Cruz,fgmastcr,,,,,1
+Santa Rita,Santa Rita,,,,,,
+Santa Terezinha,Santa Terezinha,,,,,,
+Santana,Santana,fgmasan,,,1,,1
+Santo Amaro,Santo Amaro,mp_santo_amaro,,,,,1
+Santo André,Santo André,,,,1,,
+Santos - Imigrantes,Santos - Imigrantes,arredores_imigrantes,,,,1,1
+São Bento,São Bento,fgmasaob,,,,,
+São Bernardo,São Bernardo,,1,,,,
+São Caetano,São Caetano,,,,,,
+São Joaquim,São Joaquim,fgmasjoa,,,,,
+São Judas,São Judas,fgmasjud,,,,,
+São Mateus,São Mateus,,,,,,
+São Miguel Paulista,São Miguel Paulista,,,1,,,
+São Paulo - Morumbi,São Paulo - Morumbi,,,,,,
+Saúde,Saúde,fgmasaud,,,,,
+Sé,Sé,fgmase,,,1,,1
+Socorro,Socorro,,,,,,1
+Sônia Maria,Sônia Maria,,,,,,
+Sumaré,Santuário Nossa Senhora de Fátima-Sumaré,sumare,,,,,1
+Suzano,Suzano,,,,,,
+Tamanduateí,Tamanduateí,tamandatei,1,,,,1
+Tatuapé,Tatuapé,fgmatatu,,,,,1
+Tiradentes,Tiradentes,fgmatira,,,,,
+Trianon-Masp,Trianon-Masp,fttrianon_masp,,,,,1
+Tucuruvi,Tucuruvi,fgmatucu,,,,,1
+USP Leste,USP Leste,,1,,,,1
+Utinga,Utinga,,,,,,
+Várzea Paulista,Várzea Paulista,,,,,,
+Vergueiro,Vergueiro,fgmaverg,,,,,1
+Vila Aurora ,Vila Aurora ,,,,,,
+Vila Clarice,Vila Clarice,,,,,,
+Vila das Belezas,Vila das Belezas,mp_vila_das_belezas,,1,,,1
+Vila Lobos-Jaguaré,Vila Lobos-Jaguaré,,1,,,,1
+Vila Madalena,Vila Madalena,fgvila_madalena,,,1,,1
+Vila Mariana,Vila Mariana,fgmavmar,,,1,,1
+Vila Matilde,Vila Matilde,fgmavat,,1,,,1
+Vila Olímpia,Vila Olímpia,,1,,,,1
+Vila Prudente,Vila Prudente,vila_prudente,,1,,,1
+Vila Sônia,Vila Sônia,,,,,,
+Zoológico,Zoológico,,,,,,

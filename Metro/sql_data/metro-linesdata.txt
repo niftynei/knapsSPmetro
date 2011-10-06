@@ -1,0 +1,19 @@
+insert into lines (name, imgURL)
+values 
+('Line 1 - Blue', null),
+('Line 2 - Green', 'null),
+('Line 3 - Red', 'null),
+('Line 4 - Yellow', 'null),
+('Line 5 - Lilac', 'null),
+('Line 7 - Rubi', 'null),
+('Line 8 - Diamond', 'null),
+('Line 9 - Emerald', 'null),
+('Line 10 - Turquoise', 'null),
+('Line 11 - Coral', 'null),
+('Line 11 - Coral West Express', 'null),
+('Line 12 - Saffire', 'null),
+('Special Bus Line', 'null),
+('Tourist Express', 'null),
+('ORCA Bridge - Free', 'null),
+('ORCA Bridge - Ticketed', 'null),
+('Metro Bus Corrider ABD', 'null);

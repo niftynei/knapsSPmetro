@@ -1,0 +1,69 @@
+CREATE TABLE companies (
+companyID integer primary key, 
+name char(50) not null, 
+telephone char(20) not null);
+
+CREATE TABLE linhas (
+lineID integer primary key, 
+name char(50) not null,
+displayName char(100) not null, 
+number int,
+color char(20),
+companyID int,
+iconURL blob,
+imgURL blob,
+tarifa decimal(2),
+FOREIGN KEY (companyID) references companies(companyID));
+
+CREATE TABLE stations (
+stationID integer primary key, 
+name char(50) not null,
+displayName char(100) not null,
+mapURL blob, 
+bikeRack boolean, 
+bikePark boolean, 
+bikeLoan boolean, 
+elevator boolean, 
+parking boolean,
+KEY (name));
+
+create table days(
+dayID integer primary key, 
+dayName char(10) not null);
+
+create table stationline (
+slID integer primary key, 
+lineID int not null, 
+stationID int not null, 
+routeNumber int not null, 
+notOpen boolean,
+foreign key (lineID) references linhas(lineID), 
+foreign key (stationID) references stations(stationID), 
+key (routeNumber));
+
+create table linehours(
+linehoursID integer primary key,
+slID int not null,
+dayID int not null, 
+startTime time not null, 
+stopTime time not null, 
+frequency int, 
+foreign key (slID) references stationline(slID), 
+foreign key (dayID) references days(dayID));
+
+
+------- DO NOT CREATE --------------
+create table exits (
+exitID integer primary key, 
+name char(50) not null, 
+stationID int not null, 
+foreign key (stationID) references stations(stationID)); 
+
+create table exithours(
+exitID integer not null, 
+dayID integer not null, 
+openTime time, 
+closeTime time, 
+primary key (exitID, dayID), 
+foreign key (exitID) references exits(exitID), 
+foreign key (dayID) references days(dayID));
