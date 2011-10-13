@@ -8,7 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.util.Log;
-import com.knaps.spmetro.Enums.*;
 
 public class myDB extends Activity {
 	private final String TAG = "myDB";
@@ -33,24 +32,28 @@ public class myDB extends Activity {
 	}
 	
 	public ArrayList<Line> getAllLines(){
+		ArrayList<Line> lines = new ArrayList<Line>();
+		
 		this.open();
-		Cursor c = db.rawQuery("SELECT " +
-								"l._id" + 
-								", l.name" +
-								", l.displayName" +
-								", l.number" +
-								", l.color" +
-								", c.name" +
-								", l.iconURL"+
-								", l.imgURL"+
-								", l.tarifa" +
-								"FROM line l", null);
-					
-		this.close();
-		return getLineObjectArray(c);
+    	Cursor c = db.rawQuery("SELECT _id, displayName, number FROM line", null);
+    	Log.d(TAG, "Cursor created with " + c.getCount() +" items");
+    	this.close();
+    	
+    	startManagingCursor(c);
+    	if(c.moveToFirst()){
+    		do{
+    			Line temp = new Line(c.getInt(0), c.getString(1), c.getInt(3), TestProjectActivity.alertSubject);
+    			//Line temp = new Line(c.getInt(0), , c.getString(2), ,c.getString(4),c.getInt(5),c.getString(6),c.getString(7), c.getDouble(8));
+    			lines.add(temp);
+    		}while(c.moveToNext());
+    	}
+    	
+		return lines;
 	}
 	
 	public ArrayList<Line> getLinesByStation(int stationId) {
+		ArrayList<Line> lines = new ArrayList<Line>();
+		
 		this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								"l._id" + 
@@ -68,10 +71,14 @@ public class myDB extends Activity {
 								"WHERE sl.stationId = ? AND sl.lineID = l._id", new String[] {Integer.toString(stationId)});
 					
 		this.close();
-		return getLineObjectArray(c);
+		
+		getLineObjectArray(lines, c);
+		return lines;
 	}
 	
 	public Line getLine(int lineId){
+ArrayList<Line> lines = new ArrayList<Line>();
+		
 		this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								"l._id" + 
@@ -89,35 +96,12 @@ public class myDB extends Activity {
 					
 		this.close();
 		
-		return getLineObjectArray(c).get(0);
+		getLineObjectArray(lines, c);
+		return lines;
 	}
 	
-	public ArrayList<Alert> getAllCurrentAlerts(){
-		this.open();
-		Cursor c = db.rawQuery("select" + 
-							    "Message," +
-								"Created," +
-								"StatusId" +
-								"from alert a", null);
-		this.close();
-		
-		startManagingCursor(c);
-		ArrayList<Alert> alerts = new ArrayList();
-		
-		do(c.moveToFirst()){
-			LineStatus ls = new LineStatus(c.getInt(2));
-			Alert a = new Alert(c.getString(0), c.getString(1), c.getInt(2))
-		}
-		
-		
-		return null;
-	}
-	public static ArrayList<Alert> getAlertsForStation(int stationId){
-		
-		return null;
-	}
-	public static ArrayList<Alert> getAlertsForLine(int lineId){
-		
+	public static ArrayList<Alert> getAllCurrentAlerts(){
+		//TODO: Return all current alerts
 		return null;
 	}
 	public static ArrayList<Station> getAllStations(){
@@ -148,6 +132,13 @@ public class myDB extends Activity {
 	public boolean updateDatabase(){
 		// TODO Update the Database from ONLINE (SYNC!)
 		return true;
+	}
+	private Cursor getCursor(String tableName){
+		 return db.query(tableName, null, null, null, null, null, null);
+	}
+	
+	private Cursor getCursor(String tableName, String[] columns, String where, String[] args, String orderBy){
+		return db.query(tableName, columns, where, args, null, null, orderBy);
 	}
 
 	private ArrayList<Line> getLineObjectArray(Cursor c) {

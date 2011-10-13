@@ -8,7 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.util.Log;
-import com.knaps.spmetro.Enums.*;
 
 public class myDB extends Activity {
 	private final String TAG = "myDB";
@@ -92,32 +91,8 @@ public class myDB extends Activity {
 		return getLineObjectArray(c).get(0);
 	}
 	
-	public ArrayList<Alert> getAllCurrentAlerts(){
-		this.open();
-		Cursor c = db.rawQuery("select" + 
-							    "Message," +
-								"Created," +
-								"StatusId" +
-								"from alert a", null);
-		this.close();
-		
-		startManagingCursor(c);
-		ArrayList<Alert> alerts = new ArrayList();
-		
-		do(c.moveToFirst()){
-			LineStatus ls = new LineStatus(c.getInt(2));
-			Alert a = new Alert(c.getString(0), c.getString(1), c.getInt(2))
-		}
-		
-		
-		return null;
-	}
-	public static ArrayList<Alert> getAlertsForStation(int stationId){
-		
-		return null;
-	}
-	public static ArrayList<Alert> getAlertsForLine(int lineId){
-		
+	public static ArrayList<Alert> getAllCurrentAlerts(){
+		//TODO: Return all current alerts
 		return null;
 	}
 	public static ArrayList<Station> getAllStations(){

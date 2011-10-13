@@ -2,3 +2,12 @@
 1318334723693	Move file
 1318334738158	Delete elements
 1318335072063	Delete element
+1318475330724	Rename field '_company'
+1318475345463	Rename field '_id'
+1318475351491	Rename field '_displayName'
+1318475365933	Rename field '_number'
+1318475371644	Rename field '_color'
+1318475376443	Rename field '_iconURI'
+1318475379196	Rename field '_imgURI'
+1318475381752	Rename field '_fare'
+1318475764238	Extract method 'getLineObjectArray'

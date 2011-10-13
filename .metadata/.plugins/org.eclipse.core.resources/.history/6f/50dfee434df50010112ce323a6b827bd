@@ -1,0 +1,8 @@
+package com.knaps.spmetro.Enums;
+
+public enum LineStatus {
+	OPEN (1), 
+	CLOSED (2), 
+	STOPPED (3),
+	REDUCED_VELOCITY (4)
+	}

@@ -1,5 +1,15 @@
 package com.knaps.spmetro.Enums;
 
 public enum SystemType {
-		METRO, BUS
+		METRO (1), BUS (2);
+		
+		private final int index;   
+
+	    SystemType(int index) {
+	        this.index = index;
+	    }
+
+	    public int index() { 
+	        return index; 
+	    }
 }

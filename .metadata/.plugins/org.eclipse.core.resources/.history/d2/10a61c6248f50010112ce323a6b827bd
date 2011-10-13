@@ -15,5 +15,12 @@ public class Constants {
 	public static final String DB_STATION = "station";
 	public static final String DB_STATIONLINE = "stationline";
 	
+	public static final String[] DB_LINE_COLS = new String[] {"l._id", "name", "displayName", "number", "color", "companyID", "iconURL", "imgURL", "tarifa"};
+	
+	public static final String rawWuery = "SELECT" + DB_LINE_COLS +
+											"FROM" + DB_LINE + " l" + 
+											"INNER JOIN " + DB_STATIONLINE + " sl "
+											"WHERE SL.LINEID = L._id AND SL.stationID =?";
+	
 
 }
