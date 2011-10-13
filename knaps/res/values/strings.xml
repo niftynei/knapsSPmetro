@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, KnapsActivity!</string>
-    <string name="app_name">Knaps</string>
+    <string name="hello">Welcome, Lisa!</string>
+    <string name="app_name">SPTrans</string>
+    <string name="test_string">This is a Test String</string>
+    <string name="test_string2">Why hello there</string>
+    <string name="list_button_text">Display List</string>
+    <string name="db_check">Database not created</string>
+    <string name="db_created">Database created</string>
+    <string name="db_exists">Database already exists</string>
+    
+    <string name="DB_NAME">Metro.db</string>
+    <string name="DB_PATH">/data/data/com.testProject/databases/</string>
+    <string name="DB_VERSION" format="integer">1.0</string>
 </resources>

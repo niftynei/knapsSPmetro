@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1317868204980_0" label="Window Working Set" name="Aggregate for window 1317868204978"/>
+<workingSet editPageId="org.eclipse.mylyn.tasks.ui.workingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1318335381119_1" label="SP dev" name="SP dev">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/knaps" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1317868204980_0" label="Window Working Set" name="Aggregate for window 1317868204978">
+<workingSet IMemento.internal.id="SP dev"/>
+</workingSet>
 </workingSetManager>
