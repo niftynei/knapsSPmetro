@@ -1,0 +1,13 @@
+package com.knaps.dev;
+
+import com.knaps.dev.Interfaces.ObservationSubject;
+import com.knaps.dev.Interfaces.Route;
+
+public class PlannedRoute extends Route {
+
+	public PlannedRoute(ObservationSubject o) {
+		super(o);
+		// TODO Auto-generated constructor stub
+	}
+
+}

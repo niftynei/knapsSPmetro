@@ -1,0 +1,59 @@
+package com.knaps.dev;
+
+import java.io.*;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.util.*;
+
+public class AppPrefs {
+	
+	     private SharedPreferences appSharedPrefs;
+	     private Editor prefsEditor;
+
+	     public AppPrefs(Context context)
+	     {
+	         this.appSharedPrefs = context.getSharedPreferences(Constants.SHARED_PREFS, Activity.MODE_PRIVATE);
+	         this.prefsEditor = appSharedPrefs.edit();
+	     }
+
+	     public String getObserver() {
+	         return appSharedPrefs.getString("sms_body", "");
+	     }
+
+	     public void saveSmsBody(String text) {
+	         prefsEditor.putString("sms_body", text);
+	         prefsEditor.commit();
+	     }
+public static String objectToString(Serializable object) {
+    ByteArrayOutputStream out = new ByteArrayOutputStream();
+    try {
+        new ObjectOutputStream(out).writeObject(object);
+        byte[] data = out.toByteArray();
+        out.close();
+
+        out = new ByteArrayOutputStream();
+        Base64OutputStream b64 = new Base64OutputStream(out, 0);
+        b64.write(data);
+        b64.close();
+        out.close();
+
+        return new String(out.toByteArray());
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    return null;
+}
+
+public static Object stringToObject(String encodedObject) {
+    try {
+        return new ObjectInputStream(new Base64InputStream(
+                new ByteArrayInputStream(encodedObject.getBytes()), 0)).readObject();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return null;
+}
+}

@@ -22,7 +22,12 @@
         		<category android:name="android.intent.category.DEFAULT"/>
         	</intent-filter>
         	</activity>
+        	<activity android:name=".Station"/>
+        	<activity android:name=".Line"/>
+        	<activity android:name=".AlertSubject"/>
         <activity android:name=".DataBaseHelper"/>
+        <activity android:name=".Route"/>
+        <activity android:name=".RouteCreator"/>
         <activity android:name=".DisplayLinesetro.DisplayLines"
         android:launchMode="singleInstance"
         android:label="@string/app_name">

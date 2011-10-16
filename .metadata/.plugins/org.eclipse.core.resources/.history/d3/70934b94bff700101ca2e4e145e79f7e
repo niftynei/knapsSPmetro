@@ -1,0 +1,11 @@
+package com.knaps.dev.Interfaces;
+
+import java.io.Serializable;
+
+import com.knaps.dev.AlertObserver;
+
+public interface ObservationSubject extends Serializable {
+	public void registerObserver(AlertObserver o);
+	public void removeObserver(AlertObserver o);
+	public void notifyObserver();
+}

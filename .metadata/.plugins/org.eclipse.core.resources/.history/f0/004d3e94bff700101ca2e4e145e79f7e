@@ -1,0 +1,7 @@
+package com.knaps.dev;
+
+import com.knaps.dev.Interfaces.ObservationSubject;
+
+public interface AlertObserver {
+	public void updateStatus(ObservationSubject o);
+}
