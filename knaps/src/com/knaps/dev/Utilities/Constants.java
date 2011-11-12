@@ -4,7 +4,7 @@ public class Constants {
 	public static final String SHARED_PREFS = "SHARED_PREFS";
 	public static final String DATABASE_NAME ="Metro.db";
 	public static final int DATABASE_VERSION=1;
-	public static final String DATABASE_PATH="/data/data/com.testProject/databases/";
+	public static final String DATABASE_PATH="/data/data/com.knaps.dev/databases/";
 	public static final String DB_ALERT = "alert";
 	public static final String DB_ALERTLINEHOUR = "alertlinehour";
 	public static final String DB_DROID_METADATA = "android_metadata";

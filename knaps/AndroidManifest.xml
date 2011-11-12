@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.testProject"
+      package="com.knaps.dev"
       android:versionCode="1"
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="10" />
@@ -28,7 +28,7 @@
         <activity android:name=".DataBaseHelper"/>
         <activity android:name=".Route"/>
         <activity android:name=".RouteCreator"/>
-        <activity android:name=".DisplayLinesetro.DisplayLines"
+        <activity android:name=".DisplayLines"
         android:launchMode="singleInstance"
         android:label="@string/app_name">
         <intent-filter>

@@ -86,8 +86,8 @@ public class DataAccess extends SQLiteOpenHelper {
 		myOutput.close();
 		myInput.close();
 	}
+	String myPath = dbPath + dbName;
 	public void openDataBase() throws SQLException{
-		String myPath = dbPath + dbName;
 		db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
 	}
 	@Override 
