@@ -44,98 +44,98 @@ public class DataHelper extends Activity{
 	}
 	
 	public ArrayList<Line> getAllLines(){
-		this.open();
+		//this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
-								"FROM line l", null);
+								" FROM line l", null);
 					
-		this.close();
+		//this.close();
 		return getLineObjectArray(c);
 	}
 	
 	public ArrayList<Line> getLinesByStation(int stationId) {
-		this.open();
+		//this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
-								"FROM line l"+ 
-								"INNER JOIN stationline sl"+
-								"INNER JOIN company c ON c._id = l.companyID" +
-								"WHERE sl.stationId = ? AND sl.lineID = l._id", new String[] {Integer.toString(stationId)});
+								" FROM line l"+ 
+								" INNER JOIN stationline sl"+
+								" INNER JOIN company c ON c._id = l.companyID" +
+								" WHERE sl.stationId = ? AND sl.lineID = l._id", new String[] {Integer.toString(stationId)});
 					
-		this.close();
+		//this.close();
 		return getLineObjectArray(c);
 	}
 	
 	public Line getLine(int lineId){
-		this.open();
+		//this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
-								"FROM line l"+ 
-								"INNER JOIN company c ON c._id = l.companyID" +
-								"WHERE l._id = ?", new String[] {Integer.toString(lineId)});
+								" FROM line l"+ 
+								" INNER JOIN company c ON c._id = l.companyID" +
+								" WHERE l._id = ?", new String[] {Integer.toString(lineId)});
 					
-		this.close();
+		//this.close();
 		
 		return getLineObjectArray(c).get(0);
 	}
 	
 	public ArrayList<Alert> getAllCurrentAlerts(){
-		this.open();
-		Cursor c = db.rawQuery("select" + 
+		//this.open();
+		Cursor c = db.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
 								"from alert a", null);
-		this.close();
+		//this.close();
 		return getAlertObjectArray(c);
 	}
 	
 	public ArrayList<Alert> getAlertsForStation(int stationId){
-		this.open();
-		Cursor c = db.rawQuery("select" + 
+		//this.open();
+		Cursor c = db.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
-								"from alert a " +
-								"inner join alertstationline al on a._id = al.alertid" +
-								"inner join stationline sl on al.stationlineid = sl._Id" +
-								"where sl.stationId =  ?", new String[] {Integer.toString(stationId)});
-		this.close();
+								" FROM alert a " +
+								" INNER join alertstationline al on a._id = al.alertid" +
+								" INNE join stationline sl on al.stationlineid = sl._Id" +
+								" WHERE sl.stationId =  ?", new String[] {Integer.toString(stationId)});
+		//this.close();
 		return getAlertObjectArray(c);
 		
 	}
 	public ArrayList<Alert> getAlertsForLine(int lineId){
-		this.open();
-		Cursor c = db.rawQuery("select" + 
+		//this.open();
+		Cursor c = db.rawQuery("SELECT " + 
 								Constants.DB_ALERT_FIELDS +
-								"from alert a " +
-								"inner join alertstationline al on a._id = al.alertid" +
-								"inner join stationline sl on al.stationlineid = sl._Id" +
-								"where sl.lineId =  ?", new String[] {Integer.toString(lineId)});
-		this.close();
+								" FROM alert a " +
+								" INNER join alertstationline al on a._id = al.alertid" +
+								" INNER join stationline sl on al.stationlineid = sl._Id" +
+								" WHERE sl.lineId =  ?", new String[] {Integer.toString(lineId)});
+		//this.close();
 		return getAlertObjectArray(c);
 	}
 	public ArrayList<Station> getAllStations(){
-		this.open();
+		//this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
-								"FROM station s", null);
-		this.close();
+								" FROM station s", null);
+		//this.close();
 		return getStationObjectArray(c);
 	}
 	public ArrayList<Station> getStationsByLine(int lineId) {
-		this.open();
+		//this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
-								"FROM station s" +
-								"INNER JOIN stationline sl ON sl.stationid = s._id", 
+								" FROM station s" +
+								" INNER JOIN stationline sl ON sl.stationid = s._id", 
 								new String[] { Integer.toString(lineId)});
-		this.close();
+		//this.close();
 		return getStationObjectArray(c);
 	}
 	public Station getStation(int stationId){
-		this.open();
+		//this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
-								"FROM station s" +
-								"where s._id = ?", new String[] { Integer.toString(stationId)});
-		this.close();
+								" FROM station s" +
+								" WHERE s._id = ?", new String[] { Integer.toString(stationId)});
+		//this.close();
 		return getStationObjectArray(c).get(0);
 	}
 	
@@ -172,7 +172,8 @@ public class DataHelper extends Activity{
 									c.getString(6), 
 									c.getString(7), 
 									c.getFloat(8),
-									(ObservationSubject) new AppPrefs(this).getSerializable(Constants.ALERT_SUBJECT));
+									null
+									/*(ObservationSubject) new AppPrefs(this).getSerializable(Constants.ALERT_SUBJECT)*/);
 				lines.add(temp);
 			}while(c.moveToNext());
 		}

@@ -52,7 +52,7 @@ public class Line extends Activity implements AlertObserver {
 		
 		//Register line with the alert updater
 		AlertUpdater = o;
-		AlertUpdater.registerObserver(this);
+		//AlertUpdater.registerObserver(this);
 	}
 
 	private void setStations(int lineId) {
