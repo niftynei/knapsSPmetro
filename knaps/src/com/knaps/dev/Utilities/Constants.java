@@ -21,7 +21,7 @@ public class Constants {
 												", l.displayName" +
 												", l.number" +
 												", l.color" +
-												", c.name" +
+												", l.name" +
 												", l.iconURL"+
 												", l.imgURL"+
 												", l.tarifa";
