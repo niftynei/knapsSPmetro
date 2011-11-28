@@ -47,7 +47,8 @@ public class DataHelper extends Activity{
 		//this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
-								" FROM line l", null);
+								" FROM line l"+ 
+								" INNER JOIN company c ON c._id = l.companyID", null);
 					
 		//this.close();
 		return getLineObjectArray(c);
@@ -94,7 +95,7 @@ public class DataHelper extends Activity{
 							    Constants.DB_ALERT_FIELDS +
 								" FROM alert a " +
 								" INNER join alertstationline al on a._id = al.alertid" +
-								" INNE join stationline sl on al.stationlineid = sl._Id" +
+								" INNER join stationline sl on al.stationlineid = sl._Id" +
 								" WHERE sl.stationId =  ?", new String[] {Integer.toString(stationId)});
 		//this.close();
 		return getAlertObjectArray(c);
@@ -214,7 +215,8 @@ public class DataHelper extends Activity{
 									    intToBool(c.getInt(5)), 
 									    intToBool(c.getInt(6)), 
 									    intToBool(c.getInt(7)), 
-									    (ObservationSubject) new AppPrefs(this).getSerializable(Constants.ALERT_SUBJECT));
+									    null
+									    /*(ObservationSubject) new AppPrefs(this).getSerializable(Constants.ALERT_SUBJECT)*/);
 				stations.add(s);
 			}while (c.moveToNext());
 		}

@@ -16,8 +16,14 @@
 	android:layout_height="wrap_content">
 </TextView>
 
-<Button android:text="@string/list_button_text" 
+<Button android:text="@string/line_button_text" 
 	android:id="@+id/list_button" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+</Button>
+
+<Button android:text="@string/station_button_text" 
+	android:id="@+id/station_button" 
 	android:layout_width="wrap_content" 
 	android:layout_height="wrap_content">
 </Button>

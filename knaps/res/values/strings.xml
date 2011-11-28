@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Welcome, Lisa!</string>
-    <string name="app_name">SPTrans</string>
-    <string name="test_string">This is a Test String</string>
-    <string name="test_string2">Why hello there</string>
-    <string name="list_button_text">Display List</string>
+    <string name="app_name">Sao Paulo Metro Mapper</string>
+    <string name="station_section">Sao Paulo Metro - Stations</string>
+    <string name="lines_section">Sao Paulo Metro - Lines</string>
+    <string name="routes_section">Sao Paulo Metro - Routes</string>
+    
+    <string name="line_button_text">List Lines</string>
+    <string name="station_button_text">List Stations</string>
+    
     <string name="db_check">Database not created</string>
     <string name="db_created">Database created</string>
     <string name="db_exists">Database already exists</string>

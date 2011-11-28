@@ -21,9 +21,13 @@ public final class R {
         public static final int DBsuccessTextView=0x7f060005;
         public static final int color=0x7f060002;
         public static final int demoTv=0x7f060004;
+        public static final int line_count=0x7f060008;
         public static final int list=0x7f060003;
         public static final int list_button=0x7f060006;
         public static final int name=0x7f060000;
+        public static final int station_button=0x7f060007;
+        public static final int station_name=0x7f06000a;
+        public static final int status=0x7f060009;
         public static final int tarifa=0x7f060001;
     }
     public static final class layout {
@@ -34,16 +38,18 @@ public final class R {
         public static final int stationrow=0x7f030004;
     }
     public static final class string {
-        public static final int DB_NAME=0x7f050008;
-        public static final int DB_PATH=0x7f050009;
-        public static final int DB_VERSION=0x7f05000a;
+        public static final int DB_NAME=0x7f05000a;
+        public static final int DB_PATH=0x7f05000b;
+        public static final int DB_VERSION=0x7f05000c;
         public static final int app_name=0x7f050001;
-        public static final int db_check=0x7f050005;
-        public static final int db_created=0x7f050006;
-        public static final int db_exists=0x7f050007;
+        public static final int db_check=0x7f050007;
+        public static final int db_created=0x7f050008;
+        public static final int db_exists=0x7f050009;
         public static final int hello=0x7f050000;
-        public static final int list_button_text=0x7f050004;
-        public static final int test_string=0x7f050002;
-        public static final int test_string2=0x7f050003;
+        public static final int line_button_text=0x7f050005;
+        public static final int lines_section=0x7f050003;
+        public static final int routes_section=0x7f050004;
+        public static final int station_button_text=0x7f050006;
+        public static final int station_section=0x7f050002;
     }
 }

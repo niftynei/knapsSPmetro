@@ -39,7 +39,6 @@ public class DisplayLines extends ListActivity{
 			getLines(c);
 		}
 		    public void getLines(Context c){
-		    	//dba = new DataHelper(c);
 		    	lines = dba.getAllLines();
 		    }
 

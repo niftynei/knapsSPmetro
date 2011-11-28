@@ -6,7 +6,7 @@
     <uses-sdk android:minSdkVersion="10" />
 
     <application android:icon="@drawable/knaps_icon" android:label="@string/app_name">
-        <activity android:name=".TestProjectActivity"
+        <activity android:name=".MainActivity"
                   android:label="@string/app_name"
                   android:launchMode="singleInstance">
             <intent-filter>
@@ -30,7 +30,15 @@
         <activity android:name=".RouteCreator"/>
         <activity android:name=".DisplayLines"
         android:launchMode="singleInstance"
-        android:label="@string/app_name">
+        android:label="@string/lines_section">
+        <intent-filter>
+        		<action android:name="android.intent.action.VIEW" />
+        		<category android:name="android.intent.category.DEFAULT"/>
+        	</intent-filter>
+        </activity>
+      <activity android:name=".DisplayStationList"
+        android:launchMode="singleInstance"
+        android:label="@string/station_section">
         <intent-filter>
         		<action android:name="android.intent.action.VIEW" />
         		<category android:name="android.intent.category.DEFAULT"/>
