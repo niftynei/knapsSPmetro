@@ -39,7 +39,6 @@ public class DisplayStationList extends ListActivity{
 			getStations(c);
 		}
 		    public void getStations(Context c){
-		    	dba = new DataHelper(c);
 		    	stations = dba.getAllStations();
 		    }
 
