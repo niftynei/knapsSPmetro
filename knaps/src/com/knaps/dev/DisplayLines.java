@@ -23,7 +23,6 @@ public class DisplayLines extends ListActivity{
 	protected void onCreate(Bundle savedInstanceState){
 		dba = new DataHelper(this.getBaseContext());
 		dba.open();
-		//setContentView(R.layout.lines);
 		
 		super.onCreate(savedInstanceState);
 		this.setListAdapter(new LineAdapter(this));

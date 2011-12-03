@@ -8,6 +8,7 @@ import com.knaps.dev.DAL.DataAccess;
 import com.knaps.dev.Models.AlertSubject;
 import com.knaps.dev.Utilities.AppPrefs;
 import com.knaps.dev.Utilities.Constants;
+import com.knaps.dev.Utilities.MyApp;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -57,7 +58,7 @@ public class MainActivity extends Activity {
     }
 
     private void openDataBase(){
-    	DataAccess dbHelper = new DataAccess(MainActivity.this);
+    	DataAccess dbHelper = new DataAccess(MyApp.getAppContext());
 		try{
 			dbHelper.createDataBase();
 		}
