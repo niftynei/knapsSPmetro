@@ -22,6 +22,7 @@ import com.knaps.dev.Models.PlannedRoute;
 import com.knaps.dev.Models.Station;
 import com.knaps.dev.Utilities.AppPrefs;
 import com.knaps.dev.Utilities.Constants;
+import com.knaps.dev.Utilities.MyApp;
 
 public class DataHelper extends Activity{
 	private final String TAG = "myDB";
@@ -61,9 +62,9 @@ public class DataHelper extends Activity{
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
 								" FROM line l"+ 
-								" INNER JOIN stationline sl"+
+								" INNER JOIN stationline sl ON l._id = sl.lineID "+
 								" INNER JOIN company c ON c._id = l.companyID" +
-								" WHERE sl.stationId = ? AND sl.lineID = l._id", new String[] {Integer.toString(stationId)});
+								" WHERE sl.stationId = ?", new String[] {Integer.toString(stationId)});
 					
 		this.close();
 		return getLineObjectArray(c);
@@ -220,7 +221,7 @@ public class DataHelper extends Activity{
 									    intToBool(c.getInt(6)), 
 									    intToBool(c.getInt(7)), 
 									    null
-									    /*(ObservationSubject) new AppPrefs(this).getSerializable(Constants.ALERT_SUBJECT)*/);
+									    /*(ObservationSubject) new AppPrefs(MyApp.getAppContext()).getSerializable(Constants.ALERT_SUBJECT)*/);
 				stations.add(s);
 			}while (c.moveToNext());
 		}

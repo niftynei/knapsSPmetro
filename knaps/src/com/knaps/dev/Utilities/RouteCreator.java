@@ -28,7 +28,8 @@ public final class RouteCreator extends Activity {
 
 	private Route calculateRoute(Station startStation, Station endStation) {
 		// TODO Calculate route logix!
-		Route route = new PlannedRoute((ObservationSubject)new AppPrefs(this.getApplicationContext()).getSerializable(Constants.ALERT_SUBJECT));
+		
+		Route route = new PlannedRoute((ObservationSubject)AppPrefs.getAppPrefs().getSerializable(Constants.ALERT_SUBJECT));
 		
 		route.setCost(calculateCost());
 		return null;

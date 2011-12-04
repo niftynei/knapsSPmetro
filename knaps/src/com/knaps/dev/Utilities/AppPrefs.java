@@ -4,21 +4,27 @@ import java.io.*;
 
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.util.*;
 
-public class AppPrefs {
+public class AppPrefs extends Application {
 	
 	     private SharedPreferences appSharedPrefs;
 	     private Editor prefsEditor;
+	     private static AppPrefs uniqueAppsPrefs = new AppPrefs(MyApp.getAppContext());
 
 	     public AppPrefs(Context context)
 	     {
 	         this.appSharedPrefs = context.getSharedPreferences(Constants.SHARED_PREFS, Activity.MODE_PRIVATE);
 	         this.prefsEditor = appSharedPrefs.edit();
 	     }
+	     public static AppPrefs getAppPrefs() {
+	    	 return uniqueAppsPrefs;
+	     }
+
 	     public Serializable getSerializable(String subjectName) {
 	         return stringToObject(appSharedPrefs.getString(subjectName, ""));
 	     }

@@ -8,6 +8,7 @@ import com.knaps.dev.Contracts.AlertObserver;
 import com.knaps.dev.Contracts.ObservationSubject;
 import com.knaps.dev.DAL.DataHelper;
 import com.knaps.dev.Enums.LineStatus;
+import com.knaps.dev.Utilities.MyApp;
 import com.knaps.dev.Utilities.statusUtility;
 
 public class Station extends Activity implements AlertObserver {
@@ -28,8 +29,8 @@ public class Station extends Activity implements AlertObserver {
 	
 	public Station(int id, String displayName, String mapURI, boolean bikeRack, boolean bikeLoan, boolean bikePark, boolean elevator, boolean parking, ObservationSubject o){
 		//Register for Alert Updates
-		/*this.alertUpdates = o;
-		alertUpdates.registerObserver(this);*/
+		this.alertUpdates = o;
+		//alertUpdates.registerObserver(this);
 		
 		this.id = id;
 		this.displayName = displayName;
@@ -40,7 +41,7 @@ public class Station extends Activity implements AlertObserver {
 		this.elevator = elevator;
 		this.parking = parking;
 		
-		DataHelper db = new DataHelper(this.getApplicationContext());
+		DataHelper db = new DataHelper(MyApp.getAppContext());
 		setLines(db.getLinesByStation(id));	
 	}
 	public void setId(int id) {
