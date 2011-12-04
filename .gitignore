@@ -1,0 +1,24 @@
+# Forces to git to ignore changes in the 
+# source and compiled files
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Java Package files #
+*.jar
+*.war
+*.ear
+
+# generated files
+knaps/bin/
+knaps/gen/
+
+# Local config file (sdk path, etc)
+knaps/local.properties
