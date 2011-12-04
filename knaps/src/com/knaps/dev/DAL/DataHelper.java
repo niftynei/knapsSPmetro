@@ -65,8 +65,9 @@ public class DataHelper extends Activity{
 								" INNER JOIN stationline sl ON l._id = sl.lineID "+
 								" INNER JOIN company c ON c._id = l.companyID" +
 								" WHERE sl.stationId = ?", new String[] {Integer.toString(stationId)});
-					
+		Log.d(TAG, Integer.toString(c.getCount()));
 		this.close();
+		Log.d(TAG, Integer.toString(c.getCount()));
 		return getLineObjectArray(c);
 	}
 	
@@ -126,22 +127,22 @@ public class DataHelper extends Activity{
 		return getStationObjectArray(c);
 	}
 	public ArrayList<Station> getStationsByLine(int lineId) {
-		//this.open();
+		this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
 								" FROM station s" +
 								" INNER JOIN stationline sl ON sl.stationid = s._id", 
 								new String[] { Integer.toString(lineId)});
-		//this.close();
+		this.close();
 		return getStationObjectArray(c);
 	}
 	public Station getStation(int stationId){
-		//this.open();
+		this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
 								" FROM station s" +
 								" WHERE s._id = ?", new String[] { Integer.toString(stationId)});
-		//this.close();
+		this.close();
 		return getStationObjectArray(c).get(0);
 	}
 	

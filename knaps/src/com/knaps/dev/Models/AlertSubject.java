@@ -17,16 +17,14 @@ public class AlertSubject extends Activity implements ObservationSubject {
 	private ArrayList<AlertObserver> observers;
 	private static AlertSubject alertsub = new AlertSubject();
 	
-	private AlertSubject() {
+	public AlertSubject(){
+		observers = new ArrayList<AlertObserver>();
 	}
 	
 	public static AlertSubject getAlertSubject(){
 		return alertsub;
 	}
 	
-	public AlertSubject(){
-		observers = new ArrayList<AlertObserver>();
-	}
 	
 	private void setAlerts(ArrayList<Alert> alerts) {
 		this.alerts = alerts;

@@ -40,9 +40,6 @@ public class Station extends Activity implements AlertObserver {
 		this.bikePark = bikePark;
 		this.elevator = elevator;
 		this.parking = parking;
-		
-		DataHelper db = new DataHelper(MyApp.getAppContext());
-		setLines(db.getLinesByStation(id));	
 	}
 	public void setId(int id) {
 		this.id = id;
@@ -143,7 +140,12 @@ public class Station extends Activity implements AlertObserver {
 	public void setLines(ArrayList<Line> lines) {
 		this.lines = lines;
 	}
+	
 	public ArrayList<Line> getLines() {
+		if (lines == null){
+			DataHelper db = new DataHelper(MyApp.getAppContext());
+			setLines(db.getLinesByStation(id));	
+		}
 		return lines;
 	}
 	public void updateStatus(ObservationSubject o) {

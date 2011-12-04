@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/nav_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:gravity="center">
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"/>
+
+        <Button
+            android:id="@+id/button_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="System Map"/>
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+
+        <Button
+            android:id="@+id/button_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route"/>
+
+    </LinearLayout>
+
+</LinearLayout>
