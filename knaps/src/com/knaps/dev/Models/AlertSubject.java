@@ -15,6 +15,14 @@ public class AlertSubject extends Activity implements ObservationSubject {
 	private static final long serialVersionUID = -3807085702484825483L;
 	private ArrayList<Alert> alerts;
 	private ArrayList<AlertObserver> observers;
+	private static AlertSubject alertsub = new AlertSubject();
+	
+	private AlertSubject() {
+	}
+	
+	public static AlertSubject getAlertSubject(){
+		return alertsub;
+	}
 	
 	private void setAlerts(ArrayList<Alert> alerts) {
 		this.alerts = alerts;

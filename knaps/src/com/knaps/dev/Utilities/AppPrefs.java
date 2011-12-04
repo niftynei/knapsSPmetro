@@ -13,22 +13,17 @@ public class AppPrefs {
 	
 	     private SharedPreferences appSharedPrefs;
 	     private Editor prefsEditor;
-	     private static AppPrefs uniqueAppsPrefs = new AppPrefs(MyApp.getContext());
 
-	     private AppPrefs(Context context)
+	     public AppPrefs(Context context)
 	     {
 	         this.appSharedPrefs = context.getSharedPreferences(Constants.SHARED_PREFS, Activity.MODE_PRIVATE);
 	         this.prefsEditor = appSharedPrefs.edit();
 	     }
-	     public static AppPrefs getAppPrefs() {
-	    	 return uniqueAppsPrefs;
-	     }
-
 	     public Serializable getSerializable(String subjectName) {
 	         return stringToObject(appSharedPrefs.getString(subjectName, ""));
 	     }
 
-	     public void saveObsSubject(Serializable o, String subjectName) {
+	     public void saveSerializable(Serializable o, String subjectName) {
 	         prefsEditor.putString(subjectName, objectToString(o));
 	         prefsEditor.commit();
 	     }

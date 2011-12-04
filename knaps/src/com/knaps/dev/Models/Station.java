@@ -28,8 +28,8 @@ public class Station extends Activity implements AlertObserver {
 	
 	public Station(int id, String displayName, String mapURI, boolean bikeRack, boolean bikeLoan, boolean bikePark, boolean elevator, boolean parking, ObservationSubject o){
 		//Register for Alert Updates
-		this.alertUpdates = o;
-		alertUpdates.registerObserver(this);
+		/*this.alertUpdates = o;
+		alertUpdates.registerObserver(this);*/
 		
 		this.id = id;
 		this.displayName = displayName;
@@ -40,7 +40,7 @@ public class Station extends Activity implements AlertObserver {
 		this.elevator = elevator;
 		this.parking = parking;
 		
-		DataHelper db = new DataHelper(this.getBaseContext());
+		DataHelper db = new DataHelper(this.getApplicationContext());
 		setLines(db.getLinesByStation(id));	
 	}
 	public void setId(int id) {

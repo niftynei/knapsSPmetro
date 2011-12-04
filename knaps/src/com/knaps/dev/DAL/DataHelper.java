@@ -44,18 +44,20 @@ public class DataHelper extends Activity{
 	}
 	
 	public ArrayList<Line> getAllLines(){
-		//this.open();
-		Cursor c = db.rawQuery("SELECT " +
-								Constants.DB_LINE_FIELDS +
-								" FROM line l"+ 
-								" INNER JOIN company c ON c._id = l.companyID", null);
-					
-		//this.close();
+		this.open();
+		String query = "SELECT " + Constants.DB_LINE_FIELDS + " FROM line l"+ 
+				" INNER JOIN company c ON c._id = l.companyID";
+		Log.d(TAG,query);
+		Log.d(TAG, db.getPath());
+		Cursor c = db.rawQuery(query, null);
+		Log.d(TAG, Integer.toString(c.getCount()));
+		this.close();
+		Log.d(TAG, Integer.toString(c.getCount()));
 		return getLineObjectArray(c);
 	}
 	
 	public ArrayList<Line> getLinesByStation(int stationId) {
-		//this.open();
+		this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
 								" FROM line l"+ 
@@ -63,61 +65,63 @@ public class DataHelper extends Activity{
 								" INNER JOIN company c ON c._id = l.companyID" +
 								" WHERE sl.stationId = ? AND sl.lineID = l._id", new String[] {Integer.toString(stationId)});
 					
-		//this.close();
+		this.close();
 		return getLineObjectArray(c);
 	}
 	
 	public Line getLine(int lineId){
-		//this.open();
+		this.open();
 		Cursor c = db.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
 								" FROM line l"+ 
 								" INNER JOIN company c ON c._id = l.companyID" +
 								" WHERE l._id = ?", new String[] {Integer.toString(lineId)});
 					
-		//this.close();
-		
+		this.close();
 		return getLineObjectArray(c).get(0);
 	}
 	
 	public ArrayList<Alert> getAllCurrentAlerts(){
-		//this.open();
+		this.open();
 		Cursor c = db.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
 								"from alert a", null);
-		//this.close();
+		this.close();
 		return getAlertObjectArray(c);
 	}
 	
 	public ArrayList<Alert> getAlertsForStation(int stationId){
-		//this.open();
+		this.open();
 		Cursor c = db.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
 								" FROM alert a " +
 								" INNER join alertstationline al on a._id = al.alertid" +
 								" INNER join stationline sl on al.stationlineid = sl._Id" +
 								" WHERE sl.stationId =  ?", new String[] {Integer.toString(stationId)});
-		//this.close();
+		this.close();
 		return getAlertObjectArray(c);
 		
 	}
 	public ArrayList<Alert> getAlertsForLine(int lineId){
-		//this.open();
+		this.open();
 		Cursor c = db.rawQuery("SELECT " + 
 								Constants.DB_ALERT_FIELDS +
 								" FROM alert a " +
 								" INNER join alertstationline al on a._id = al.alertid" +
 								" INNER join stationline sl on al.stationlineid = sl._Id" +
 								" WHERE sl.lineId =  ?", new String[] {Integer.toString(lineId)});
-		//this.close();
+		this.close();
 		return getAlertObjectArray(c);
 	}
 	public ArrayList<Station> getAllStations(){
-		//this.open();
-		Cursor c = db.rawQuery("SELECT " +
-								Constants.DB_STATION_FIELDS +
-								" FROM station s", null);
-		//this.close();
+		this.open();
+		Log.v(TAG, db.toString());
+		String query = "SELECT "+ Constants.DB_STATION_FIELDS + " FROM station s";
+		Cursor c = db.rawQuery(query, null);
+		Log.v(TAG, query.toString());
+		Log.d(TAG, Integer.toString(c.getCount()));
+		this.close();
+		Log.d(TAG, Integer.toString(c.getCount()));
 		return getStationObjectArray(c);
 	}
 	public ArrayList<Station> getStationsByLine(int lineId) {
@@ -159,9 +163,9 @@ public class DataHelper extends Activity{
 	}
 
 	private ArrayList<Line> getLineObjectArray(Cursor c) {
-		// Retrieve the appPrefs 
 		startManagingCursor(c);
 		ArrayList<Line> lines = new ArrayList<Line>();
+		Log.d(TAG, Integer.toString(c.getCount()));
 		if (c.moveToFirst()){
 			do{
 				Line temp = new Line(c.getInt(0), 
@@ -174,7 +178,7 @@ public class DataHelper extends Activity{
 									c.getString(7), 
 									c.getFloat(8),
 									null
-									/*(ObservationSubject) new AppPrefs(this).getSerializable(Constants.ALERT_SUBJECT)*/);
+									/*(ObservationSubject)AppPrefs.getSerializable(Constants.ALERT_SUBJECT)*/);
 				lines.add(temp);
 			}while(c.moveToNext());
 		}
@@ -183,7 +187,7 @@ public class DataHelper extends Activity{
 	private ArrayList<Alert> getAlertObjectArray(Cursor c) {
 		startManagingCursor(c);
 		ArrayList<Alert> alerts = new ArrayList<Alert>();
-		
+		Log.d(TAG, Integer.toString(c.getCount()));
 		if(c.moveToFirst()){
 			do {
 				DateFormat df = new SimpleDateFormat("YYYY-MM-DDThh:mm:ss.sTZD");
@@ -204,7 +208,7 @@ public class DataHelper extends Activity{
 		// TODO Auto-generated method stub
 		startManagingCursor(c);
 		ArrayList<Station> stations = new ArrayList<Station>();
-		
+		Log.d(TAG, Integer.toString(c.getCount()));
 		if(c.moveToFirst()){
 			do {
 				Station s = new Station(c.getInt(0), 

@@ -18,13 +18,13 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 public class DisplayStationList extends ListActivity{
-	DataHelper dba;
+	private DataHelper dba;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
-		dba = new DataHelper(this.getBaseContext());
+		dba = new DataHelper(this.getApplicationContext());
 		dba.open();
-		
+
 		super.onCreate(savedInstanceState);
 		this.setListAdapter(new StationAdapter(this));
 	}

@@ -27,11 +27,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         
         //Save AS to preferences to be referenced by any newly created object!        
-        AppPrefs appPrefs = AppPrefs.getAppPrefs();
-        if (appPrefs.getSerializable(Constants.ALERT_SUBJECT) == null){
-        	AlertSubject alertSubject  = new AlertSubject();
-        	appPrefs.saveObsSubject(alertSubject, Constants.ALERT_SUBJECT);
-        }
+        AppPrefs appPrefs = new AppPrefs(this.getApplicationContext());
+        appPrefs.saveSerializable(AlertSubject.getAlertSubject(), Constants.ALERT_SUBJECT);
         
         setContentView(R.layout.main);
         openDataBase();

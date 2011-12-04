@@ -21,9 +21,9 @@ public class DisplayLines extends ListActivity{
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
-		dba = new DataHelper(this.getBaseContext());
+		dba = new DataHelper(this.getApplicationContext());
 		dba.open();
-		//setContentView(R.layout.lines);
+		//setxxx	ContentView(R.layout.lines);
 		
 		super.onCreate(savedInstanceState);
 		this.setListAdapter(new LineAdapter(this));
@@ -38,9 +38,9 @@ public class DisplayLines extends ListActivity{
 			lines = new ArrayList<Line>();
 			getLines(c);
 		}
-		    public void getLines(Context c){
-		    	lines = dba.getAllLines();
-		    }
+		public void getLines(Context c){
+			lines = dba.getAllLines();
+		}
 
 		public int getCount(){ return lines.size();}
 
