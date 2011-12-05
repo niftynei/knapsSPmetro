@@ -3,15 +3,17 @@ package com.knaps.dev.Models;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import com.knaps.dev.Contracts.AlertObserver;
 import com.knaps.dev.Contracts.ObservationSubject;
-import com.knaps.dev.DAL.DataHelper;
+import com.knaps.dev.DAL.DataAccessor;
 import com.knaps.dev.Enums.LineStatus;
 import com.knaps.dev.Utilities.MyApp;
 import com.knaps.dev.Utilities.statusUtility;
 
-public class Station extends Activity implements AlertObserver {
+public class Station implements AlertObserver, Parcelable {
 	private int id;
 	private String displayName;
 	private String mapURI;
@@ -143,7 +145,7 @@ public class Station extends Activity implements AlertObserver {
 	
 	public ArrayList<Line> getLines() {
 		if (lines == null){
-			DataHelper db = new DataHelper(MyApp.getAppContext());
+			DataAccessor db = new DataAccessor(MyApp.getAppContext());
 			setLines(db.getLinesByStation(id));	
 		}
 		return lines;
@@ -168,6 +170,67 @@ public class Station extends Activity implements AlertObserver {
 	
 	public boolean isOpen() {
 		return statusUtility.isOpen(this);
+	}
+	
+	public Station (Parcel in){
+		readFromParcel(in);
+	}
+	
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
+        public Station createFromParcel(Parcel in) {
+            return new Station (in);
+        }
+
+        public Station [] newArray(int size) {
+            throw new UnsupportedOperationException();
+        }
+    };
+
+    public void writeToParcel(Parcel dest, int flags) {
+
+    	//private ObservationSubject alertUpdates;
+    	
+        dest.writeInt(id);
+        dest.writeString(displayName);
+        dest.writeString(mapURI);
+        dest.writeInt(bikeRack ? 1 : 0);
+        dest.writeInt(bikeLoan ? 1:0);
+        dest.writeInt(bikePark ? 1:0);
+        dest.writeInt(elevator ? 1:0);
+        dest.writeInt(parking ? 1:0);
+        dest.writeLong(latitude);
+        dest.writeLong(longitude);
+        dest.writeInt((status == null) ? 0 : status.index());
+        dest.writeTypedList(alerts);
+        dest.writeTypedList(lines);
+
+}
+
+    private void readFromParcel(Parcel in) {
+    	
+       	this.id = in.readInt();
+    	this.displayName = in.readString();
+    	this.mapURI = in.readString();
+    	this.bikeRack = (in.readInt() == 0)? false: true;
+    	this.bikeLoan=  (in.readInt() == 0)? false: true;
+    	this.bikePark= (in.readInt() == 0)? false: true;
+    	this.elevator = (in.readInt() == 0)? false: true;
+    	this.parking = (in.readInt() == 0)? false: true;
+    	this.latitude = in.readLong();
+    	this.longitude = in.readLong();
+        this.status = LineStatus.fromInt(in.readInt());
+        if (alerts == null){
+        	alerts = new ArrayList<Alert>();
+        }
+        in.readTypedList(alerts, Alert.CREATOR);
+        if (lines == null){
+        	lines = new ArrayList<Line>();
+        }
+        in.readTypedList(lines, Line.CREATOR);
+}
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

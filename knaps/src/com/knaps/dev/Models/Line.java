@@ -3,22 +3,25 @@ package com.knaps.dev.Models;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import com.knaps.dev.Contracts.AlertObserver;
 import com.knaps.dev.Contracts.ObservationSubject;
-import com.knaps.dev.DAL.DataHelper;
+import com.knaps.dev.DAL.DataAccessor;
 import com.knaps.dev.Enums.LineStatus;
 import com.knaps.dev.Enums.SystemType;
+import com.knaps.dev.Utilities.MyApp;
 import com.knaps.dev.Utilities.statusUtility;
 
-public class Line extends Activity implements AlertObserver {
+public class Line implements AlertObserver, Parcelable {
 	private int id;
 	private String displayName;
 	private int number;
 	private String color;
 	private Company company;
-	private String iconURI;
-	private String imgURI;
+	private String iconUri;
+	private String imgUri;
 	private double fare;
 	private ArrayList<Station> stations;
 	private ArrayList<Alert> alerts;
@@ -46,8 +49,8 @@ public class Line extends Activity implements AlertObserver {
 		this.color = color;
 		//TODO: Wire up company to pull via COMPANY ID
 		this.company = null;
-		this.iconURI = iconURI;
-		this.imgURI = imgURI;
+		this.iconUri = iconURI;
+		this.imgUri = imgURI;
 		this.fare = fare;
 		
 		//Register line with the alert updater
@@ -56,7 +59,7 @@ public class Line extends Activity implements AlertObserver {
 	}
 
 	private void setStations(int lineId) {
-		 stations = new DataHelper(this.getApplicationContext()).getStationsByLine(lineId);
+		 stations = new DataAccessor(MyApp.getAppContext()).getStationsByLine(lineId);
 	}
 	public void setStations(ArrayList<Station> stations){
 		this.stations = stations;
@@ -89,10 +92,10 @@ public class Line extends Activity implements AlertObserver {
 		return company;
 	}
 	public String getIcon(){
-		return iconURI;
+		return iconUri;
 	}
 	public String getImg(){
-		return imgURI;
+		return imgUri;
 	}
 	public double getTarifa(){
 		return fare;
@@ -139,5 +142,65 @@ public class Line extends Activity implements AlertObserver {
 	public boolean isOpen(){
 		// Checks that this station is open
 		return statusUtility.isOpen(this);
+	}
+	
+	public Line (Parcel in){
+		readFromParcel(in);
+	}
+	
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
+        public Line createFromParcel(Parcel in) {
+            return new Line (in);
+        }
+
+        public Line [] newArray(int size) {
+            throw new UnsupportedOperationException();
+        }
+    };
+
+    public void writeToParcel(Parcel dest, int flags) {
+
+//    	private ObservationSubject AlertUpdater;
+    	
+        dest.writeInt(id);
+        dest.writeString(displayName);
+        dest.writeInt(number);
+        dest.writeString(color);
+        dest.writeParcelable(company, flags);
+        dest.writeString(iconUri);
+        dest.writeString(imgUri);
+        dest.writeDouble(fare);
+        dest.writeTypedList(stations);
+        dest.writeTypedList(alerts);
+        dest.writeInt((status == null) ? 0 : status.index());
+        dest.writeInt((systemType == null) ? 0 : systemType.index());
+
+}
+
+    @SuppressWarnings("unchecked")
+	private void readFromParcel(Parcel in) {
+    	
+       	this.id = in.readInt();
+    	this.displayName = in.readString();
+    	this.number = in.readInt();
+    	this.color = in.readString();
+    	this.company = in.readParcelable(Company.class.getClassLoader());
+    	this.iconUri=  in.readString();
+    	this.imgUri= in.readString();
+    	this.fare = in.readDouble();
+        if (stations == null) {
+            stations = new ArrayList<Station>();
+        }
+        in.readTypedList(stations, Station.CREATOR);
+        if (alerts == null){
+        	alerts = new ArrayList<Alert>();
+        }
+        in.readTypedList(alerts, Alert.CREATOR);
+        this.status = LineStatus.fromInt(in.readInt());
+        this.systemType = SystemType.fromInt(in.readInt());
+}
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

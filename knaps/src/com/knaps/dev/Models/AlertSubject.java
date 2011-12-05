@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.knaps.dev.Contracts.AlertObserver;
 import com.knaps.dev.Contracts.ObservationSubject;
-import com.knaps.dev.DAL.DataHelper;
+import com.knaps.dev.DAL.DataAccessor;
 
 import android.app.Activity;
 
@@ -36,7 +36,7 @@ public class AlertSubject extends Activity implements ObservationSubject {
 	
 	public void getCurrentAlerts(){
 		//TODO: DB class to return all current Alerts
-		DataHelper db = new DataHelper(this.getApplicationContext());
+		DataAccessor db = new DataAccessor(this.getApplicationContext());
 		this.setAlerts(db.getAllCurrentAlerts());
 		notifyObserver();
 	}

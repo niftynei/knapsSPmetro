@@ -12,4 +12,12 @@ public enum SystemType {
 	    public int index() { 
 	        return index; 
 	    }
+	    public static SystemType fromInt(int key) {
+	          for (SystemType b : SystemType.values()) {
+	            if (key == b.index) {
+	              return b;
+	            }
+	          }
+	        return null;
+	    }
 }

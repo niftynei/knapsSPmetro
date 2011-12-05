@@ -16,7 +16,7 @@ public enum LineStatus {
         return index; 
     }
     
-    public static LineStatus fromString(int key) {
+    public static LineStatus fromInt(int key) {
           for (LineStatus b : LineStatus.values()) {
             if (key == b.index) {
               return b;

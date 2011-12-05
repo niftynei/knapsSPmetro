@@ -3,7 +3,7 @@ package com.knaps.dev;
 import java.util.ArrayList;
 
 import com.knaps.dev.R;
-import com.knaps.dev.DAL.DataHelper;
+import com.knaps.dev.DAL.DataAccessor;
 import com.knaps.dev.Models.Line;
 
 import android.app.ListActivity;
@@ -17,11 +17,11 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 public class DisplayLines extends ListActivity{
-	DataHelper dba;
+	DataAccessor dba;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
-		dba = new DataHelper(this.getApplicationContext());
+		dba = new DataAccessor(this.getApplicationContext());
 		dba.open();
 		//setContentView(R.layout.lines);
 		

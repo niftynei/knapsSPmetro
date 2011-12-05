@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import com.knaps.dev.R;
-import com.knaps.dev.DAL.DataAccess;
+import com.knaps.dev.DAL.DataBaseManager;
 import com.knaps.dev.Models.AlertSubject;
 import com.knaps.dev.Utilities.AppPrefs;
 import com.knaps.dev.Utilities.Constants;
@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
     }
 
     private void openDataBase(){
-    	DataAccess dbHelper = new DataAccess(MyApp.getAppContext());
+    	DataBaseManager dbHelper = new DataBaseManager(MyApp.getAppContext());
 		try{
 			dbHelper.createDataBase();
 		}

@@ -23,8 +23,13 @@
         		<category android:name="android.intent.category.DEFAULT"/>
         	</intent-filter>
         	</activity>
-        	<activity android:name=".Station"/>
-        	<activity android:name=".Line"/>
+        <activity android:name=".StationView"
+        	android:label="@string/station_section">
+        	<intent-filter>
+        		<action android:name="android.intent.action.VIEW" />
+        		<category android:name="android.intent.category.DEFAULT"/>
+        	</intent-filter>
+        	</activity>
         	<activity android:name=".AlertSubject"/>
         <activity android:name=".DataBaseHelper"/>
         <activity android:name=".Route"/>

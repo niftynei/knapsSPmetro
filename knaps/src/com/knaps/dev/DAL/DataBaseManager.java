@@ -15,7 +15,7 @@ import android.content.res.Resources;
  * @author Terra_Firma
  *
  */
-public class DataAccess extends SQLiteOpenHelper {
+public class DataBaseManager extends SQLiteOpenHelper {
 	private static final int dbVersion = Constants.DATABASE_VERSION;
 	private static final String dbName = Constants.DATABASE_NAME;
 	private static final String dbPath = Constants.DATABASE_PATH;
@@ -29,7 +29,7 @@ public class DataAccess extends SQLiteOpenHelper {
 	 * the app assets and resources
 	 * @param context
 	 */
-	public DataAccess(Context context) {
+	public DataBaseManager(Context context) {
 		super(context, dbName, null, dbVersion);
 		this.myContext = context;
 	}
@@ -95,6 +95,15 @@ public class DataAccess extends SQLiteOpenHelper {
 		if(db != null){
 			db.close();
 			super.close();
+		}
+	}
+	public void open() throws SQLiteException
+	{
+		try{
+			this.getWritableDatabase();
+		}catch (SQLiteException e){
+			Log.v("Open database exception caught", e.getMessage());
+			this.getReadableDatabase();
 		}
 	}
 	@Override

@@ -1,6 +1,9 @@
 package com.knaps.dev.Models;
 
-public class Company {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Company implements Parcelable {
 	private int id;
 	private String name;
 	private int telephone;
@@ -33,5 +36,37 @@ public class Company {
 
 	public int getId() {
 		return id;
+	}
+	
+	public Company (Parcel in){
+		readFromParcel(in);
+	}
+	
+    public static final Parcelable.Creator<Parcel> CREATOR = new Parcelable.Creator() {
+        public Company createFromParcel(Parcel in) {
+            return new Company (in);
+        }
+
+        public Company [] newArray(int size) {
+            throw new UnsupportedOperationException();
+        }
+    };
+
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(name);
+        dest.writeInt(telephone);
+}
+
+    @SuppressWarnings("unchecked")
+	private void readFromParcel(Parcel in) {
+    	
+       	this.id = in.readInt();
+    	this.name = in.readString();
+    	this.telephone = in.readInt();
+}
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

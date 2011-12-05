@@ -24,24 +24,25 @@ import com.knaps.dev.Utilities.AppPrefs;
 import com.knaps.dev.Utilities.Constants;
 import com.knaps.dev.Utilities.MyApp;
 
-public class DataHelper extends Activity{
+public class DataAccessor extends Activity{
 	private final String TAG = "myDB";
-	private SQLiteDatabase db;
-	private final DataAccess dbhelper;
-	public DataHelper(Context c){
-		dbhelper = new DataAccess(c);
+	private SQLiteDatabase dbInstance;
+	private final DataBaseManager dbManager;
+	public DataAccessor(Context c){
+		dbManager = new DataBaseManager(c);
 	}
 	public void close(){
-		db.close();
+		dbInstance.close();
 	}
 	public void open() throws SQLiteException
 	{
 		try{
-			db = dbhelper.getWritableDatabase();
+			dbInstance = dbManager.getWritableDatabase();
 		}catch (SQLiteException e){
 			Log.v("Open database exception caught", e.getMessage());
-			db = dbhelper.getReadableDatabase();
+			dbInstance = dbManager.getReadableDatabase();
 		}
+		
 	}
 	
 	public ArrayList<Line> getAllLines(){
@@ -49,8 +50,8 @@ public class DataHelper extends Activity{
 		String query = "SELECT " + Constants.DB_LINE_FIELDS + " FROM line l"+ 
 				" INNER JOIN company c ON c._id = l.companyID";
 		Log.d(TAG,query);
-		Log.d(TAG, db.getPath());
-		Cursor c = db.rawQuery(query, null);
+		Log.d(TAG, dbInstance.getPath());
+		Cursor c = dbInstance.rawQuery(query, null);
 		Log.d(TAG, Integer.toString(c.getCount()));
 		this.close();
 		Log.d(TAG, Integer.toString(c.getCount()));
@@ -59,7 +60,7 @@ public class DataHelper extends Activity{
 	
 	public ArrayList<Line> getLinesByStation(int stationId) {
 		this.open();
-		Cursor c = db.rawQuery("SELECT " +
+		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
 								" FROM line l"+ 
 								" INNER JOIN stationline sl ON l._id = sl.lineID "+
@@ -73,7 +74,7 @@ public class DataHelper extends Activity{
 	
 	public Line getLine(int lineId){
 		this.open();
-		Cursor c = db.rawQuery("SELECT " +
+		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
 								" FROM line l"+ 
 								" INNER JOIN company c ON c._id = l.companyID" +
@@ -85,7 +86,7 @@ public class DataHelper extends Activity{
 	
 	public ArrayList<Alert> getAllCurrentAlerts(){
 		this.open();
-		Cursor c = db.rawQuery("SELECT " + 
+		Cursor c = dbInstance.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
 								"from alert a", null);
 		this.close();
@@ -94,7 +95,7 @@ public class DataHelper extends Activity{
 	
 	public ArrayList<Alert> getAlertsForStation(int stationId){
 		this.open();
-		Cursor c = db.rawQuery("SELECT " + 
+		Cursor c = dbInstance.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
 								" FROM alert a " +
 								" INNER join alertstationline al on a._id = al.alertid" +
@@ -106,7 +107,7 @@ public class DataHelper extends Activity{
 	}
 	public ArrayList<Alert> getAlertsForLine(int lineId){
 		this.open();
-		Cursor c = db.rawQuery("SELECT " + 
+		Cursor c = dbInstance.rawQuery("SELECT " + 
 								Constants.DB_ALERT_FIELDS +
 								" FROM alert a " +
 								" INNER join alertstationline al on a._id = al.alertid" +
@@ -117,9 +118,9 @@ public class DataHelper extends Activity{
 	}
 	public ArrayList<Station> getAllStations(){
 		this.open();
-		Log.v(TAG, db.toString());
+		Log.v(TAG, dbInstance.toString());
 		String query = "SELECT "+ Constants.DB_STATION_FIELDS + " FROM station s";
-		Cursor c = db.rawQuery(query, null);
+		Cursor c = dbInstance.rawQuery(query, null);
 		Log.v(TAG, query.toString());
 		Log.d(TAG, Integer.toString(c.getCount()));
 		this.close();
@@ -128,7 +129,7 @@ public class DataHelper extends Activity{
 	}
 	public ArrayList<Station> getStationsByLine(int lineId) {
 		this.open();
-		Cursor c = db.rawQuery("SELECT " +
+		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
 								" FROM station s" +
 								" INNER JOIN stationline sl ON sl.stationid = s._id", 
@@ -138,7 +139,7 @@ public class DataHelper extends Activity{
 	}
 	public Station getStation(int stationId){
 		this.open();
-		Cursor c = db.rawQuery("SELECT " +
+		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
 								" FROM station s" +
 								" WHERE s._id = ?", new String[] { Integer.toString(stationId)});
@@ -195,7 +196,7 @@ public class DataHelper extends Activity{
 				DateFormat df = new SimpleDateFormat("YYYY-MM-DDThh:mm:ss.sTZD");
 				Alert a = null;
 				try {
-					a = new Alert(c.getString(0), df.parse(c.getString(1)), LineStatus.fromString(c.getInt(2)));
+					a = new Alert(c.getString(0), df.parse(c.getString(1)), LineStatus.fromInt(c.getInt(2)));
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					Log.e(TAG, String.format("failed to parse string to date {0}", c.getString(1)));			

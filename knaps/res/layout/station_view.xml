@@ -1,79 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="fill_parent" >
 
     <TextView
-        android:id="@+id/station_name"
+        android:id="@+id/station_name_for_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:filterTouchesWhenObscured="false"
+        android:padding="10dip"
         android:text="Station Name"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+<com.knaps.dev.Views.AlertView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/station_name_for_view"
+        android:id = "@+id/station_alert" />
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/station_status_linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_below="@id/station_name_for_view"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/station_status"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:layout_height="fill_parent"
+            android:layout_weight="15"
+            android:text="Open"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/home_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Home" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/current_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_weight="1"
+            android:text="Current" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/map_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_weight="1"
+            android:text="Map" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Medium Text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/knaps_icon" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-    </LinearLayout>
+        android:ellipsize="none"
+        android:gravity="center_vertical|fill_horizontal"
+        android:padding="10dip"
+        android:shadowColor="#fff"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius=".2"
+        android:text="Lines"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dip"
+        android:typeface="normal"
+        android:visibility="visible" android:layout_below="@id/station_status_linearLayout"/>
 
-    <ViewStub
-        android:id="@+id/viewStub1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+    <ListView
+        android:id="@+id/station_line_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:dividerHeight="1px" >
+    </ListView>
 
-    <com.knaps.dev.Views.NavButtonsView android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
-    
+    <com.knaps.dev.Views.NavButtonsView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>
