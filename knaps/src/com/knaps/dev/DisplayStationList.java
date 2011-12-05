@@ -69,7 +69,7 @@ public class DisplayStationList extends ListActivity{
 		holder.station = getItem(arg0);
 		holder.mDisplayName.setText(holder.station.getDisplayName());
 		holder.mLineCount.setText(Integer.toString(holder.station.getLines().size()));
-		holder.mStatus.setText(holder.station.getStatus().toString());
+		//holder.mStatus.setText(holder.station.getStatus().toString());
 		v.setTag(holder);
 		return v;
 		}
