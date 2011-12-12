@@ -1,13 +1,14 @@
 package com.knaps.dev;
 
 import java.util.ArrayList;
-import java.util.WeakHashMap;
 
-import com.knaps.dev.R;
 import com.knaps.dev.DAL.DataAccessor;
+import com.knaps.dev.Models.Line;
 import com.knaps.dev.Models.Station;
+import com.knaps.dev.Utilities.MyApp;
+import com.knaps.dev.Views.AlertView;
+import com.knaps.dev.Views.NavButtonsActivity;
 
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,40 +20,55 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class DisplayStationList extends ListActivity{
-	private DataAccessor da;
-	final WeakHashMap<Long, Object> hasher = null;
-	
+public class LineView extends NavButtonsActivity {
+	private Line _line;
 	@Override
-	protected void onCreate(Bundle savedInstanceState){
+	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-
-		da = new DataAccessor(this.getApplicationContext());
-		this.setListAdapter(new StationAdapter(this));
-		
+		// Pull Saved Station out of Passed Intent
+		Line line = getIntent().getParcelableExtra("line");
+		_line = line;
+		setView(line);
 	}
 	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id){
-		Object obj = getListView().getItemAtPosition(position);
+	protected void onNewIntent(Intent intent){
+		Line line = intent.getParcelableExtra("line");
+		_line = line;
 		
-		Intent intent = new Intent(DisplayStationList.this, StationView.class);
-		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-		intent.putExtra("station", (Station)obj);
-		startActivity(intent);
+		setView(line);
 	}
-	
-	private class StationAdapter extends BaseAdapter {
-		private final String TAG = "StationAdapter";
+	private void setView(Line line) {
+		setContentView(R.layout.line_view);
+		
+		ListView lv = (ListView)findViewById(R.id.line_station_list);
+		lv.setAdapter(new LineAdapter(this));
+		
+		TextView tv = (TextView)findViewById(R.id.line_name_for_view);
+		tv.setText(line.getDisplayName());
+		
+		AlertView va = (AlertView)findViewById(R.id.line_alert);
+		
+		if (line.getAlerts() == null || line.getAlerts().size() == 0){
+			va.setVisibility(View.GONE);
+		}
+		else {
+		}
+	}
+	private class LineAdapter extends BaseAdapter{
+
+		private final String TAG = "LineAdapter";
 		private LayoutInflater mInf;
 		private ArrayList<Station> stations;
-		public StationAdapter(Context c){
+		public LineAdapter(Context c){
 			mInf = LayoutInflater.from(c);
 			stations = new ArrayList<Station>();
-			getStations(c);
+			getLines(c);
 		}
-		    public void getStations(Context c){
-		    	stations = da.getAllStations();
-		    }
+		public void getLines(Context c){
+			DataAccessor dba = new DataAccessor(MyApp.getAppContext());
+			dba.open();
+			stations = dba.getStationsByLine(_line.getId());
+		}
 
 		public int getCount(){ return stations.size();}
 
@@ -94,5 +110,4 @@ public class DisplayStationList extends ListActivity{
 		TextView mStatus;
 	}
 	}
-
 }

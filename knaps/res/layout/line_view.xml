@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/line_name_for_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:filterTouchesWhenObscured="false"
+        android:padding="10dip"
+        android:text="Line Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.knaps.dev.Views.AlertView
+        android:id="@+id/line_alert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_name_for_view" />
+
+    <TextView
+        android:id="@+id/line_station_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_alert"
+        android:ellipsize="none"
+        android:gravity="center_vertical|fill_horizontal"
+        android:padding="10dip"
+        android:shadowColor="#fff"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius=".2"
+        android:text="Stations"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20dip"
+        android:typeface="normal"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/line_station_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_station_label"
+        android:dividerHeight="1px"
+        android:filterTouchesWhenObscured="true" >
+    </ListView>
+
+    <com.knaps.dev.Views.NavButtonsView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

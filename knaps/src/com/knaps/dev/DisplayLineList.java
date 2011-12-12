@@ -5,18 +5,21 @@ import java.util.ArrayList;
 import com.knaps.dev.R;
 import com.knaps.dev.DAL.DataAccessor;
 import com.knaps.dev.Models.Line;
+import com.knaps.dev.Models.Station;
 
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
-public class DisplayLines extends ListActivity{
+public class DisplayLineList extends ListActivity{
 	DataAccessor dba;
 	
 	@Override
@@ -27,6 +30,15 @@ public class DisplayLines extends ListActivity{
 		
 		super.onCreate(savedInstanceState);
 		this.setListAdapter(new LineAdapter(this));
+	}
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id){
+		Object obj = getListView().getItemAtPosition(position);
+		
+		Intent intent = new Intent(DisplayLineList.this, LineView.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		intent.putExtra("line", (Line)obj);
+		startActivity(intent);
 	}
 	
 	private class LineAdapter extends BaseAdapter {

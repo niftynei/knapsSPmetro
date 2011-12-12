@@ -9,6 +9,7 @@ import com.knaps.dev.Models.AlertSubject;
 import com.knaps.dev.Utilities.AppPrefs;
 import com.knaps.dev.Utilities.Constants;
 import com.knaps.dev.Utilities.MyApp;
+import com.knaps.dev.Views.NavButtonsActivity;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +21,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 
-public class MainActivity extends Activity {
+public class MainActivity extends NavButtonsActivity {
 	private final static String TAG = "main";	
     /** Called when the activity is first created. */
     @Override
@@ -48,7 +49,7 @@ public class MainActivity extends Activity {
         });
         listButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {				
-				Intent showLines = new Intent(MainActivity.this, DisplayLines.class);
+				Intent showLines = new Intent(MainActivity.this, DisplayLineList.class);
 				startActivity(showLines);
 			}
 		});

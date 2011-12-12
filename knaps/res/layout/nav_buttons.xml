@@ -13,25 +13,30 @@
             android:id="@+id/button_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home" android:layout_weight="1"/>
+            android:text="Home" android:layout_weight="1"
+            android:onClick="goHome"/>
 
         <Button
             android:id="@+id/button_map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Map"  android:layout_weight="1"/>
+            android:text="Map"  android:layout_weight="1"
+            android:onClick="showSystemMap"/>
 
         <Button
             android:id="@+id/button_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search" android:layout_weight="1"/>
+            android:text="Search" android:layout_weight="1"
+            android:onClick="goSearch"/>
 
         <Button
             android:id="@+id/button_route"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Route" android:layout_weight="1"/>
+            android:text="Route" android:layout_weight="1"
+           android:onClick="createRoute"
+           />
 
     </LinearLayout>
 

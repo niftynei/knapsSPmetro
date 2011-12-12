@@ -129,10 +129,12 @@ public class DataAccessor extends Activity{
 	}
 	public ArrayList<Station> getStationsByLine(int lineId) {
 		this.open();
+		Log.d(TAG, "Line ID for Stations get by " + lineId);
 		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
 								" FROM station s" +
-								" INNER JOIN stationline sl ON sl.stationid = s._id", 
+								" INNER JOIN stationline sl ON sl.stationid = s._id" +
+								" WHERE sl.lineid = ?", 
 								new String[] { Integer.toString(lineId)});
 		this.close();
 		return getStationObjectArray(c);
