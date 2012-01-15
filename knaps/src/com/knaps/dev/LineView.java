@@ -54,6 +54,15 @@ public class LineView extends NavButtonsActivity {
 		else {
 		}
 	}
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id){
+		Object obj = getListView().getItemAtPosition(position);
+		
+		Intent intent = new Intent(DisplayStationList.this, StationView.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		intent.putExtra("station", (Station)obj);
+		startActivity(intent);
+	}
 	private class LineAdapter extends BaseAdapter{
 
 		private final String TAG = "LineAdapter";
@@ -66,7 +75,6 @@ public class LineView extends NavButtonsActivity {
 		}
 		public void getLines(Context c){
 			DataAccessor dba = new DataAccessor(MyApp.getAppContext());
-			dba.open();
 			stations = dba.getStationsByLine(_line.getId());
 		}
 
@@ -98,7 +106,6 @@ public class LineView extends NavButtonsActivity {
 		holder.station = getItem(arg0);
 		holder.mDisplayName.setText(holder.station.getDisplayName());
 		holder.mLineCount.setText(Integer.toString(holder.station.getLines().size()));
-		//holder.mStatus.setText(holder.station.getStatus().toString());
 		v.setTag(holder);
 		return v;
 		}

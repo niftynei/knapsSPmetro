@@ -25,8 +25,6 @@ public class DisplayLineList extends ListActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		dba = new DataAccessor(this.getApplicationContext());
-		dba.open();
-		//setContentView(R.layout.lines);
 		
 		super.onCreate(savedInstanceState);
 		this.setListAdapter(new LineAdapter(this));
@@ -67,23 +65,16 @@ public class DisplayLineList extends ListActivity{
 			Log.d(TAG, "get view reached");
 			View v = arg1;
 			if ((v==null) || (v.getTag() == null)){
-				Log.d(TAG, "v was null");
 				v = mInf.inflate(R.layout.linerow, null);
-				Log.d(TAG, "v inflated "+ v.getId());
 				holder = new ViewHolder();
 				holder.mDisplayName = (TextView)v.findViewById(R.id.name);
-				Log.d(TAG, Double.toString(R.id.name));
 				holder.mColor = (TextView)v.findViewById(R.id.color);
-				Log.d(TAG, Double.toString(R.id.color));
 				holder.mTarifa = (TextView)v.findViewById(R.id.tarifa);
-				Log.d(TAG, Double.toString(R.id.tarifa));
 				v.setTag(holder);
 			}else{
 				holder=(ViewHolder)v.getTag();
 			}
 			
-		Log.d(TAG, "heading to line creation");
-		
 		holder.line = getItem(arg0);
 		holder.mDisplayName.setText(holder.line.getDisplayName());
 		holder.mColor.setText(holder.line.getColor());

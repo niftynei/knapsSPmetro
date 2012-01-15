@@ -11,6 +11,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
+import android.os.Bundle;
 import android.util.Log;
 
 import com.knaps.dev.Contracts.ObservationSubject;
@@ -28,13 +29,18 @@ public class DataAccessor extends Activity{
 	private final String TAG = "myDB";
 	private SQLiteDatabase dbInstance;
 	private final DataBaseManager dbManager;
-	public DataAccessor(Context c){
-		dbManager = new DataBaseManager(c);
+	
+	 @Override
+	public void onCreate(Bundle savedInstanceState) {
+		 super.onCreate(savedInstanceState);
+			try{
+				dbInstance = dbManager.getWritableDatabase();
+			}catch (SQLiteException e){
+				Log.v("Open database exception caught", e.getMessage());
+				dbInstance = dbManager.getReadableDatabase();
+			}
 	}
-	public void close(){
-		dbInstance.close();
-	}
-	public void open() throws SQLiteException
+	private void open()
 	{
 		try{
 			dbInstance = dbManager.getWritableDatabase();
@@ -42,24 +48,30 @@ public class DataAccessor extends Activity{
 			Log.v("Open database exception caught", e.getMessage());
 			dbInstance = dbManager.getReadableDatabase();
 		}
-		
+	}
+	@Override
+	public void onDestroy(){
+		dbInstance.close();
+		super.onDestroy();
+	}
+	public DataAccessor(Context c){
+		dbManager = new DataBaseManager(c);
+		this.open();
 	}
 	
 	public ArrayList<Line> getAllLines(){
-		this.open();
 		String query = "SELECT " + Constants.DB_LINE_FIELDS + " FROM line l"+ 
 				" INNER JOIN company c ON c._id = l.companyID";
 		Log.d(TAG,query);
 		Log.d(TAG, dbInstance.getPath());
 		Cursor c = dbInstance.rawQuery(query, null);
 		Log.d(TAG, Integer.toString(c.getCount()));
-		this.close();
 		Log.d(TAG, Integer.toString(c.getCount()));
 		return getLineObjectArray(c);
 	}
 	
 	public ArrayList<Line> getLinesByStation(int stationId) {
-		this.open();
+		
 		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
 								" FROM line l"+ 
@@ -67,85 +79,78 @@ public class DataAccessor extends Activity{
 								" INNER JOIN company c ON c._id = l.companyID" +
 								" WHERE sl.stationId = ?", new String[] {Integer.toString(stationId)});
 		Log.d(TAG, Integer.toString(c.getCount()));
-		this.close();
+		
 		Log.d(TAG, Integer.toString(c.getCount()));
 		return getLineObjectArray(c);
 	}
 	
 	public Line getLine(int lineId){
-		this.open();
+		
 		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_LINE_FIELDS +
 								" FROM line l"+ 
 								" INNER JOIN company c ON c._id = l.companyID" +
 								" WHERE l._id = ?", new String[] {Integer.toString(lineId)});
 					
-		this.close();
+		
 		return getLineObjectArray(c).get(0);
 	}
 	
 	public ArrayList<Alert> getAllCurrentAlerts(){
-		this.open();
 		Cursor c = dbInstance.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
 								"from alert a", null);
-		this.close();
 		return getAlertObjectArray(c);
 	}
 	
 	public ArrayList<Alert> getAlertsForStation(int stationId){
-		this.open();
 		Cursor c = dbInstance.rawQuery("SELECT " + 
 							    Constants.DB_ALERT_FIELDS +
 								" FROM alert a " +
 								" INNER join alertstationline al on a._id = al.alertid" +
 								" INNER join stationline sl on al.stationlineid = sl._Id" +
 								" WHERE sl.stationId =  ?", new String[] {Integer.toString(stationId)});
-		this.close();
 		return getAlertObjectArray(c);
 		
 	}
 	public ArrayList<Alert> getAlertsForLine(int lineId){
-		this.open();
 		Cursor c = dbInstance.rawQuery("SELECT " + 
 								Constants.DB_ALERT_FIELDS +
 								" FROM alert a " +
 								" INNER join alertstationline al on a._id = al.alertid" +
 								" INNER join stationline sl on al.stationlineid = sl._Id" +
-								" WHERE sl.lineId =  ?", new String[] {Integer.toString(lineId)});
-		this.close();
+								" WHERE sl.lineId = ?", new String[] {Integer.toString(lineId)});
 		return getAlertObjectArray(c);
 	}
 	public ArrayList<Station> getAllStations(){
-		this.open();
 		Log.v(TAG, dbInstance.toString());
 		String query = "SELECT "+ Constants.DB_STATION_FIELDS + " FROM station s";
 		Cursor c = dbInstance.rawQuery(query, null);
 		Log.v(TAG, query.toString());
 		Log.d(TAG, Integer.toString(c.getCount()));
-		this.close();
 		Log.d(TAG, Integer.toString(c.getCount()));
 		return getStationObjectArray(c);
 	}
 	public ArrayList<Station> getStationsByLine(int lineId) {
-		this.open();
-		Log.d(TAG, "Line ID for Stations get by " + lineId);
-		Cursor c = dbInstance.rawQuery("SELECT " +
-								Constants.DB_STATION_FIELDS +
-								" FROM station s" +
-								" INNER JOIN stationline sl ON sl.stationid = s._id" +
-								" WHERE sl.lineid = ?", 
-								new String[] { Integer.toString(lineId)});
-		this.close();
+		Log.d(TAG, dbInstance.getPath().toString());
+		String query = "SELECT " +
+				Constants.DB_STATION_FIELDS +
+				" FROM station s" +
+				" INNER JOIN stationline sl ON sl.stationid = s._id" +
+				" WHERE sl.lineid = ?";
+		Log.d(TAG, "Line ID: " + lineId);
+		Log.d(TAG, query);
+		Cursor c = dbInstance.rawQuery(query, new String[] {Integer.toString(lineId)});
+		
 		return getStationObjectArray(c);
 	}
 	public Station getStation(int stationId){
-		this.open();
+		
 		Cursor c = dbInstance.rawQuery("SELECT " +
 								Constants.DB_STATION_FIELDS +
 								" FROM station s" +
 								" WHERE s._id = ?", new String[] { Integer.toString(stationId)});
-		this.close();
+		
 		return getStationObjectArray(c).get(0);
 	}
 	

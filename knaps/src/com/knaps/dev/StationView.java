@@ -25,7 +25,6 @@ public class StationView extends NavButtonsActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		// Pull Saved Station out of Passed Intent
 		Station station = getIntent().getParcelableExtra("station");
 		_station = station;
 		setView(station);
@@ -56,6 +55,15 @@ public class StationView extends NavButtonsActivity {
 			alertText.setText(station.getAlerts().toString());
 		}
 	}
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id){
+		Object obj = getListView().getItemAtPosition(position);
+		
+		Intent intent = new Intent(DisplayLineList.this, LineView.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		intent.putExtra("line", (Line)obj);
+		startActivity(intent);
+	}
 	private class LineAdapter extends BaseAdapter{
 
 		private final String TAG = "LineAdapter";
@@ -68,7 +76,6 @@ public class StationView extends NavButtonsActivity {
 		}
 		public void getLines(Context c){
 			DataAccessor dba = new DataAccessor(MyApp.getAppContext());
-			dba.open();
 			lines = dba.getLinesByStation(_station.getId());
 		}
 
