@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -12,6 +13,7 @@ import com.knaps.dev.Models.Line;
 import com.knaps.dev.Models.Station;
 import com.knaps.dev.Views.AlertView;
 import com.knaps.dev.Views.NavButtonsActivity;
+import com.knaps.dev.Views.StationMapView;
 
 public class StationView extends NavButtonsActivity implements OnCustomClickListener {
 	private Station _station;
@@ -39,6 +41,17 @@ public class StationView extends NavButtonsActivity implements OnCustomClickList
 		
 		TextView tv = (TextView)findViewById(R.id.station_name_for_view);
 		tv.setText(station.getDisplayName());
+
+		Button mapButton = (Button)findViewById(R.id.home_button);
+		mapButton.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent intent = new Intent(getApplicationContext(), StationMapView.class);
+				intent.putExtra("stationMap", _station.getMapURI());
+				startActivity(intent);
+			}
+			
+		});
 		
 		AlertView va = (AlertView)findViewById(R.id.station_alert);
 		

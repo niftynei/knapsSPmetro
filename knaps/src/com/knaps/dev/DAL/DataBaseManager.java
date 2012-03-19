@@ -56,20 +56,9 @@ public class DataBaseManager extends SQLiteOpenHelper {
 		}
 	}
 	private boolean checkDataBase(){
-		SQLiteDatabase checkDB = null;
-		try{
-			String myPath = dbPath + dbName;
-			checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-		}catch(SQLiteException e){
-			//database doesn't exist yet
-		}
-		
-		if(checkDB != null){
-			checkDB.close();
-		}
-		
-		Log.d(TAG, "DB Exists: " + checkDB);
-		return checkDB != null ? true: false;
+			File dbFile = new File(dbPath + dbName);
+			return dbFile.exists();
+
 	}
 	private void copyDataBase() throws IOException {
 		InputStream myInput = myContext.getAssets().open(dbName);

@@ -33,12 +33,7 @@ public class DataAccessor extends Activity{
 	 @Override
 	public void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);
-			try{
-				dbInstance = dbManager.getWritableDatabase();
-			}catch (SQLiteException e){
-				Log.v("Open database exception caught", e.getMessage());
-				dbInstance = dbManager.getReadableDatabase();
-			}
+			open();
 	}
 	private void open()
 	{
@@ -53,6 +48,27 @@ public class DataAccessor extends Activity{
 	public void onDestroy(){
 		dbInstance.close();
 		super.onDestroy();
+	}
+	
+	@Override
+	protected void onRestart() {
+		super.onRestart();
+		open();
+	}
+	@Override
+	protected void onResume() {
+		super.onResume();
+		open();
+	}
+	@Override
+	protected void onPause() {
+		dbInstance.close();
+		super.onPause();
+	}
+	@Override
+	protected void onStop() {
+		dbInstance.close();
+		super.onStop();
 	}
 	public DataAccessor(Context c){
 		dbManager = new DataBaseManager(c);
@@ -192,6 +208,7 @@ public class DataAccessor extends Activity{
 				lines.add(temp);
 			}while(c.moveToNext());
 		}
+		c.close();
 		return lines;
 	}
 	private ArrayList<Alert> getAlertObjectArray(Cursor c) {
@@ -212,6 +229,7 @@ public class DataAccessor extends Activity{
 				alerts.add(a);
 			}while (c.moveToNext());
 		}
+		c.close();
 		return alerts;
 	}
 	private ArrayList<Station> getStationObjectArray(Cursor c) {
@@ -234,7 +252,7 @@ public class DataAccessor extends Activity{
 				stations.add(s);
 			}while (c.moveToNext());
 		}
-		
+		c.close();
 		return stations;
 	}
 	private boolean intToBool(int i){

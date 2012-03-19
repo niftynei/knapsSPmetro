@@ -14,8 +14,31 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int knaps_icon=0x7f020001;
+        public static final int alto_ipiranga=0x7f020000;
+        public static final int arredores_imigrantes=0x7f020001;
+        public static final int bicicletario=0x7f020002;
+        public static final int bicicletarioemprest=0x7f020003;
+        public static final int chacara_klabin=0x7f020004;
+        public static final int fgvila_madalena=0x7f020005;
+        public static final int fttrianon_map=0x7f020006;
+        public static final int icon=0x7f020007;
+        public static final int knaps_icon=0x7f020008;
+        public static final int linha1=0x7f020009;
+        public static final int linha10=0x7f02000a;
+        public static final int linha11=0x7f02000b;
+        public static final int linha11e=0x7f02000c;
+        public static final int linha12=0x7f02000d;
+        public static final int linha2=0x7f02000e;
+        public static final int linha3=0x7f02000f;
+        public static final int linha4=0x7f020010;
+        public static final int linha5=0x7f020011;
+        public static final int linha7=0x7f020012;
+        public static final int linha8=0x7f020013;
+        public static final int linha9=0x7f020014;
+        public static final int mapa_metro=0x7f020015;
+        public static final int tamanduatei=0x7f020016;
+        public static final int terminalonibus=0x7f020017;
+        public static final int vila_prudente=0x7f020018;
     }
     public static final class id {
         public static final int DBsuccessTextView=0x7f06000c;
@@ -34,14 +57,14 @@ public final class R {
         public static final int line_station_label=0x7f060004;
         public static final int line_station_list=0x7f060005;
         public static final int list=0x7f06000a;
-        public static final int list_button=0x7f06000d;
+        public static final int list_button=0x7f06000e;
         public static final int map_button=0x7f06001a;
         public static final int name=0x7f060006;
         public static final int nav_buttons=0x7f06000f;
         public static final int station_alert=0x7f060015;
         public static final int station_alert_image=0x7f060000;
         public static final int station_alert_text=0x7f060001;
-        public static final int station_button=0x7f06000e;
+        public static final int station_button=0x7f06000d;
         public static final int station_line_list=0x7f06001c;
         public static final int station_name=0x7f06001f;
         public static final int station_name_for_view=0x7f060014;
@@ -60,7 +83,8 @@ public final class R {
         public static final int main=0x7f030005;
         public static final int nav_buttons=0x7f030006;
         public static final int station_view=0x7f030007;
-        public static final int stationrow=0x7f030008;
+        public static final int stationmap_view=0x7f030008;
+        public static final int stationrow=0x7f030009;
     }
     public static final class string {
         public static final int DB_NAME=0x7f05000a;

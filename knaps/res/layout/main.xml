@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -16,20 +16,20 @@
 	android:layout_height="wrap_content">
 </TextView>
 
-<Button android:text="@string/line_button_text" 
-	android:id="@+id/list_button" 
-	android:layout_width="wrap_content" 
-	android:layout_height="wrap_content">
-</Button>
-
 <Button android:text="@string/station_button_text" 
 	android:id="@+id/station_button" 
 	android:layout_width="wrap_content" 
-	android:layout_height="wrap_content">
+	android:layout_height="wrap_content" android:layout_below="@id/DBsuccessTextView">
 </Button>
  
+<Button android:text="@string/line_button_text" 
+	android:id="@+id/list_button" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_below="@id/station_button">
+</Button>
     <com.knaps.dev.Views.NavButtonsView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true" />
-</LinearLayout>
+</RelativeLayout>
